@@ -78,6 +78,7 @@ export default {
 			},
 			fontFamily: {
 				'space': ['Space Grotesk', 'sans-serif'],
+				'tektur': ['Tektur', 'sans-serif'],
 			},
 			keyframes: {
 				'accordion-down': {
