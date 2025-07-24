@@ -36,8 +36,8 @@ const Features = () => {
     },
     {
       icon: <HardHat className="w-10 h-10 text-white transition-transform duration-300 transform" />,
-      title: "Industrial Safety",
-      description: "Protective workwear that detects hazards, monitors fatigue, and prevents workplace injuries through early intervention.",
+      title: "Сайт + AI-бот",
+      description: "Создаём сайт, подключаем чат-бота и единую омниканальную воронку.",
       image: "/lovable-uploads/cf8966e3-de0d-445f-9fbd-ee6c48daa7ff.png"
     },
     {
