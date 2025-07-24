@@ -24,7 +24,7 @@ const Features = () => {
   const features = [
     {
       icon: <Activity className="w-10 h-10 text-white transition-transform duration-300 transform" />,
-      title: "Аналитика & Стратегия",
+      title: "Процессы под ключ",
       description: "Исследуем рынок + клиентов, строим CJM и финансовые модели для точного роста.",
       image: "/lovable-uploads/bc684e3c-45bd-4393-8b93-a4d7030a8e1a.png"
     },
