@@ -30,8 +30,8 @@ const Features = () => {
     },
     {
       icon: <Shield className="w-10 h-10 text-white transition-transform duration-300 transform" />,
-      title: "Military & Defense",
-      description: "Tactical gear with embedded sensors for soldier health monitoring, environmental awareness, and enhanced safety.",
+      title: "Процессы под ключ",
+      description: "Автоматизируем продажи, снабжение и бек-офис: RPA-скрипты, интеграции, CRM",
       image: "/lovable-uploads/48ecf6e2-5a98-4a9d-af6f-ae2265cd4098.png"
     },
     {
