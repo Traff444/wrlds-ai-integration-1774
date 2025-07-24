@@ -152,9 +152,7 @@ const Hero = () => {
         <div className="banner-overlay bg-transparent pt-20 sm:pt-24 md:pt-32 w-full">
           <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center h-full">
             <motion.div className="w-full max-w-4xl text-center" variants={itemVariants}>
-              <motion.h1 className="banner-title font-tektur text-gray-900" variants={itemVariants}>
-                Непрерывное развитие бизнеса по Kaiz<span style={{color: '#E53935'}}>e</span>n
-              </motion.h1>
+              <motion.h1 className="banner-title text-gray-900" variants={itemVariants}>Непрерывное развитие бизнеса по-кайдзен</motion.h1>
               <motion.p className="banner-subtitle text-gray-600 mt-4 sm:mt-6" variants={itemVariants}>
                 Автоматизируем исследования, продажи и операции малого и среднего бизнеса — от аналитики до чат-ботов
               </motion.p>
