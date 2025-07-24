@@ -1,4 +1,4 @@
-import { ArrowRight, Code, Cpu, Layers, MessageSquare } from "lucide-react";
+import { ArrowRight, BarChart3, Settings, Globe, MessageSquare } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
@@ -194,26 +194,26 @@ const Hero = () => {
       }}>
           <motion.div className="bg-white p-4 md:p-5 rounded-xl shadow-sm border border-gray-100 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md" variants={itemVariants}>
             <div className="w-10 h-10 md:w-12 md:h-12 bg-gray-100 flex items-center justify-center rounded-lg text-gray-500 mb-2 md:mb-3">
-              <Cpu className="w-5 h-5 md:w-6 md:h-6" />
+              <BarChart3 className="w-5 h-5 md:w-6 md:h-6" />
             </div>
-            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">Исследования</h3>
-            <p className="text-gray-600 text-xs md:text-sm">Глубокий анализ рынка и потребностей клиентов для принятия обоснованных решений.</p>
+            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">Аналитика и рынок</h3>
+            <p className="text-gray-600 text-xs md:text-sm">Глубокие исследования, Customer-Journey-карты и финансовые модели, на которых строим стратегию роста.</p>
           </motion.div>
           
           <motion.div className="bg-white p-4 md:p-5 rounded-xl shadow-sm border border-gray-100 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md" variants={itemVariants}>
             <div className="w-10 h-10 md:w-12 md:h-12 bg-gray-100 flex items-center justify-center rounded-lg text-gray-500 mb-2 md:mb-3">
-              <Code className="w-5 h-5 md:w-6 md:h-6" />
+              <Settings className="w-5 h-5 md:w-6 md:h-6" />
             </div>
-            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">Автоматизация</h3>
-            <p className="text-gray-600 text-xs md:text-sm">Создание чат-ботов, CRM-систем и веб-платформ для оптимизации бизнес-процессов.</p>
+            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">Процессы под ключ</h3>
+            <p className="text-gray-600 text-xs md:text-sm">Автоматизируем продажи, снабжение и бек-офис: CRM-скрипты, роботы-интеграторы и Kaizen-дашборды.</p>
           </motion.div>
           
           <motion.div className="bg-white p-4 md:p-5 rounded-xl shadow-sm border border-gray-100 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md" variants={itemVariants}>
             <div className="w-10 h-10 md:w-12 md:h-12 bg-gray-100 flex items-center justify-center rounded-lg text-gray-500 mb-2 md:mb-3">
-              <Layers className="w-5 h-5 md:w-6 md:h-6" />
+              <Globe className="w-5 h-5 md:w-6 md:h-6" />
             </div>
-            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">Развитие</h3>
-            <p className="text-gray-600 text-xs md:text-sm">Непрерывное улучшение процессов и системы для максимальной эффективности бизнеса.</p>
+            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">Сайты + Чат-боты</h3>
+            <p className="text-gray-600 text-xs md:text-sm">Разрабатываем сайт, подключаем AI-бота и единую омниканальную воронку — всё в одной экосистеме.</p>
           </motion.div>
         </motion.div>
       </div>
