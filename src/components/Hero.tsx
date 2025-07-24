@@ -154,8 +154,8 @@ const Hero = () => {
             <motion.div className="w-full max-w-4xl text-center" variants={itemVariants}>
               <motion.h1 className="banner-title text-gray-900" variants={itemVariants}>
                 Непрерывное развитие бизнеса по{" "}
-                <span className="font-tektur">
-                  Kai<span className="text-red-500">z</span>en
+                <span>
+                  Kai<span style={{ color: '#E53935' }}>z</span>en
                 </span>
               </motion.h1>
               <motion.p className="banner-subtitle text-gray-600 mt-4 sm:mt-6" variants={itemVariants}>
