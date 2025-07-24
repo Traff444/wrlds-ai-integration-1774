@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { TrendingUp, Shield, HardHat, Zap, ArrowRight, Box, Truck, Code, CheckCircle, Rocket, Factory, Microchip, Handshake, RefreshCcw, MessageSquare } from "lucide-react";
+import { TrendingUp, Shield, HardHat, Zap, ArrowRight, Box, Truck, Code, CheckCircle, Rocket, Factory, Microchip, Handshake, RefreshCcw, MessageSquare, Workflow } from "lucide-react";
 import { cn } from '@/lib/utils';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -29,7 +29,7 @@ const Features = () => {
       image: "/lovable-uploads/bc684e3c-45bd-4393-8b93-a4d7030a8e1a.png"
     },
     {
-      icon: <Shield className="w-10 h-10 text-white transition-transform duration-300 transform" />,
+      icon: <Workflow className="w-10 h-10 text-white transition-transform duration-300 transform" />,
       title: "Процессы под ключ",
       description: "Автоматизируем продажи, снабжение и бек-офис: RPA-скрипты, интеграции, CRM",
       image: "/lovable-uploads/dcb286fc-8430-4377-a96b-154ab015564d.png"
