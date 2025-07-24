@@ -68,18 +68,23 @@ const Hero = () => {
       speedY: number;
       opacity: number;
       color: string;
+      isAccent: boolean;
     }> = [];
 
     // Create particles
     for (let i = 0; i < 50; i++) {
+      const isAccent = Math.random() < 0.15; // 15% красных акцентных точек
       particles.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
-        size: Math.random() * 3 + 1,
+        size: isAccent ? Math.random() * 4 + 2 : Math.random() * 3 + 1, // Красные точки больше
         speedX: (Math.random() - 0.5) * 0.5,
         speedY: (Math.random() - 0.5) * 0.5,
         opacity: Math.random() * 0.5 + 0.2,
-        color: `rgba(30, 30, 30, ${Math.random() * 0.6 + 0.3})`
+        color: isAccent 
+          ? `rgba(229, 58, 50, ${Math.random() * 0.7 + 0.4})` // Красные акцентные
+          : `rgba(30, 30, 30, ${Math.random() * 0.6 + 0.3})`, // Темные обычные
+        isAccent
       });
     }
 
@@ -116,7 +121,7 @@ const Hero = () => {
               ctx.beginPath();
               ctx.moveTo(particle.x, particle.y);
               ctx.lineTo(otherParticle.x, otherParticle.y);
-              ctx.strokeStyle = `rgba(229, 58, 50, ${(100 - distance) / 800})`;
+              ctx.strokeStyle = `rgba(60, 60, 60, ${(100 - distance) / 1000})`;
               ctx.lineWidth = 1;
               ctx.stroke();
             }
