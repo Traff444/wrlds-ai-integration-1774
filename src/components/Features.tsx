@@ -44,7 +44,7 @@ const Features = () => {
       icon: <Zap className="w-10 h-10 text-white transition-transform duration-300 transform" />,
       title: "Kaizen-дашборды",
       description: "Метрики, A/B и ретроспективы, чтобы улучшать бизнес 1 % в день.",
-      image: "/lovable-uploads/6739bd63-bf19-4abd-bb23-0b613bbf7ac8.png"
+      image: "/lovable-uploads/eb49877e-22a1-4040-983f-846f94b28e5a.png"
     }
   ];
 
