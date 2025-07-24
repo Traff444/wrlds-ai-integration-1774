@@ -26,7 +26,7 @@ const Features = () => {
       icon: <Activity className="w-10 h-10 text-white transition-transform duration-300 transform" />,
       title: "Sports Performance",
       description: "Specialized fabrics that analyze form, provide instant feedback, and help prevent injuries in athletic equipment.",
-      image: "/lovable-uploads/f47bc7ba-7ccf-48e5-9aa1-4223be607988.png"
+      image: "/lovable-uploads/48e540e5-6a25-44e4-b3f7-80f3bfc2777a.png"
     },
     {
       icon: <Shield className="w-10 h-10 text-white transition-transform duration-300 transform" />,
