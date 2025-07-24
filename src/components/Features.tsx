@@ -156,7 +156,7 @@ const Features = () => {
               Комплексный подход
             </div>
             <p className="text-gray-600 mt-4">
-              Our textile sensor technology transforms ordinary fabrics into intelligent interfaces that collect data, monitor conditions, and enhance performance across diverse sectors.
+              Сначала данные, потом действия: измеряем, автоматизируем, улучшаем — повторяем цикл без остановки
             </p>
           </div>
           
