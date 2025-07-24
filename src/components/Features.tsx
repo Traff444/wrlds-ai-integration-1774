@@ -32,7 +32,7 @@ const Features = () => {
       icon: <Shield className="w-10 h-10 text-white transition-transform duration-300 transform" />,
       title: "Процессы под ключ",
       description: "Автоматизируем продажи, снабжение и бек-офис: RPA-скрипты, интеграции, CRM",
-      image: "/lovable-uploads/48ecf6e2-5a98-4a9d-af6f-ae2265cd4098.png"
+      image: "/lovable-uploads/dcb286fc-8430-4377-a96b-154ab015564d.png"
     },
     {
       icon: <HardHat className="w-10 h-10 text-white transition-transform duration-300 transform" />,
