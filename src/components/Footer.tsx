@@ -70,8 +70,8 @@ const Footer = () => {
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 pb-10 border-b border-gray-700">
           <div className="lg:col-span-2">
-            <span className="font-tektur font-medium text-2xl text-white mb-6 block">
-              F(<span className="text-[#E53935]">A</span>m)team
+            <span className="font-tektur font-medium text-3xl text-white mb-6 block">
+              f(<span className="text-[#E53935]">A</span>m)team
             </span>
             <p className="text-gray-300 mb-6">
               WRLDS Technologies provides an end-to-end platform for the creation and deployment of AI-powered smart sensor devices, giving customers 100% ownership while handling the complete technological development.
