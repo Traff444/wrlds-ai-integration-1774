@@ -79,7 +79,7 @@ const Hero = () => {
         speedX: (Math.random() - 0.5) * 0.5,
         speedY: (Math.random() - 0.5) * 0.5,
         opacity: Math.random() * 0.5 + 0.2,
-        color: `rgba(255, 255, 255, ${Math.random() * 0.3 + 0.1})`
+        color: `rgba(30, 30, 30, ${Math.random() * 0.6 + 0.3})`
       });
     }
 
@@ -116,7 +116,7 @@ const Hero = () => {
               ctx.beginPath();
               ctx.moveTo(particle.x, particle.y);
               ctx.lineTo(otherParticle.x, otherParticle.y);
-              ctx.strokeStyle = `rgba(255, 255, 255, ${(100 - distance) / 1000})`;
+              ctx.strokeStyle = `rgba(229, 58, 50, ${(100 - distance) / 800})`;
               ctx.lineWidth = 1;
               ctx.stroke();
             }
@@ -137,19 +137,18 @@ const Hero = () => {
   
   return <motion.div className="relative w-full" initial="hidden" animate="visible" variants={containerVariants}>
       <div className="banner-container relative overflow-hidden h-[50vh] sm:h-[60vh] md:h-[500px] lg:h-[550px] xl:h-[600px] w-full">
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-800">
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-gray-100">
           <canvas 
             ref={canvasRef}
             className="absolute inset-0 w-full h-full"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-white"></div>
         </div>
         
         <div className="banner-overlay bg-transparent pt-20 sm:pt-24 md:pt-32 w-full">
           <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center h-full">
             <motion.div className="w-full max-w-4xl text-center" variants={itemVariants}>
-              <motion.h1 className="banner-title text-white" variants={itemVariants}>The Future of Smart Textile Technology is here.</motion.h1>
-              <motion.p className="banner-subtitle text-gray-300 mt-4 sm:mt-6" variants={itemVariants}>
+              <motion.h1 className="banner-title text-gray-900" variants={itemVariants}>The Future of Smart Textile Technology is here.</motion.h1>
+              <motion.p className="banner-subtitle text-gray-600 mt-4 sm:mt-6" variants={itemVariants}>
                 We integrate AI-powered textile sensors into clothing, footwear, and wearables.
               </motion.p>
               <motion.div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 sm:mt-8 justify-center items-center" variants={itemVariants}>
