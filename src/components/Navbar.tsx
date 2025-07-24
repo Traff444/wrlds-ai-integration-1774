@@ -48,9 +48,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
-              <div className={cn("font-space font-bold text-xl", isScrolled ? "text-black" : "text-white")}>
-                <span style={{ color: '#E53A32' }}>F</span>amTeam
-              </div>
+              <img src="/lovable-uploads/7d120ee6-3614-4b75-9c35-716d54490d67.png" alt="WRLDS Technologies Logo" className={cn("h-8 w-auto", isScrolled ? "" : "brightness-0 invert")} />
             </Link>
           </div>
           
