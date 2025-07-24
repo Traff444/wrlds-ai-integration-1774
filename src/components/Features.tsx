@@ -38,7 +38,7 @@ const Features = () => {
       icon: <HardHat className="w-10 h-10 text-white transition-transform duration-300 transform" />,
       title: "Сайт + AI-бот",
       description: "Создаём сайт, подключаем чат-бота и единую омниканальную воронку.",
-      image: "/lovable-uploads/cf8966e3-de0d-445f-9fbd-ee6c48daa7ff.png"
+      image: "/lovable-uploads/53077ce3-6114-4784-b87d-966b77d45a7d.png"
     },
     {
       icon: <Zap className="w-10 h-10 text-white transition-transform duration-300 transform" />,
