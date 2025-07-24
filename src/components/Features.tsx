@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { TrendingUp, Shield, HardHat, Zap, ArrowRight, Box, Truck, Code, CheckCircle, Rocket, Factory, Microchip, Handshake, RefreshCcw, MessageSquare, Workflow } from "lucide-react";
+import { TrendingUp, Shield, HardHat, Zap, ArrowRight, Box, Truck, Code, CheckCircle, Rocket, Factory, Microchip, Handshake, RefreshCcw, MessageSquare, Workflow, MessageCircle, BarChart3 } from "lucide-react";
 import { cn } from '@/lib/utils';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -35,13 +35,13 @@ const Features = () => {
       image: "/lovable-uploads/dcb286fc-8430-4377-a96b-154ab015564d.png"
     },
     {
-      icon: <HardHat className="w-10 h-10 text-white transition-transform duration-300 transform" />,
+      icon: <MessageCircle className="w-10 h-10 text-white transition-transform duration-300 transform" />,
       title: "Сайт + AI-бот",
       description: "Создаём сайт, подключаем чат-бота и единую омниканальную воронку.",
       image: "/lovable-uploads/53077ce3-6114-4784-b87d-966b77d45a7d.png"
     },
     {
-      icon: <Zap className="w-10 h-10 text-white transition-transform duration-300 transform" />,
+      icon: <BarChart3 className="w-10 h-10 text-white transition-transform duration-300 transform" />,
       title: "Kaizen-дашборды",
       description: "Метрики, A/B и ретроспективы, чтобы улучшать бизнес 1 % в день.",
       image: "/lovable-uploads/eb49877e-22a1-4040-983f-846f94b28e5a.png"
