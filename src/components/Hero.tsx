@@ -2,9 +2,11 @@ import { ArrowRight, Code, Cpu, Layers, MessageSquare } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { useEffect, useRef } from "react";
 
 const Hero = () => {
   const isMobile = useIsMobile();
+  const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerVariants = {
     hidden: {
       opacity: 0
@@ -41,27 +43,105 @@ const Hero = () => {
       });
     }
   };
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    const resizeCanvas = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight * 0.6;
+    };
+
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+
+    // Animated particles
+    const particles: Array<{
+      x: number;
+      y: number;
+      size: number;
+      speedX: number;
+      speedY: number;
+      opacity: number;
+      color: string;
+    }> = [];
+
+    // Create particles
+    for (let i = 0; i < 50; i++) {
+      particles.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        size: Math.random() * 3 + 1,
+        speedX: (Math.random() - 0.5) * 0.5,
+        speedY: (Math.random() - 0.5) * 0.5,
+        opacity: Math.random() * 0.5 + 0.2,
+        color: `rgba(255, 255, 255, ${Math.random() * 0.3 + 0.1})`
+      });
+    }
+
+    let animationId: number;
+
+    const animate = () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Update and draw particles
+      particles.forEach((particle, index) => {
+        particle.x += particle.speedX;
+        particle.y += particle.speedY;
+
+        // Wrap around screen
+        if (particle.x > canvas.width) particle.x = 0;
+        if (particle.x < 0) particle.x = canvas.width;
+        if (particle.y > canvas.height) particle.y = 0;
+        if (particle.y < 0) particle.y = canvas.height;
+
+        // Draw particle
+        ctx.beginPath();
+        ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+        ctx.fillStyle = particle.color;
+        ctx.fill();
+
+        // Draw connections
+        particles.forEach((otherParticle, otherIndex) => {
+          if (index !== otherIndex) {
+            const dx = particle.x - otherParticle.x;
+            const dy = particle.y - otherParticle.y;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+
+            if (distance < 100) {
+              ctx.beginPath();
+              ctx.moveTo(particle.x, particle.y);
+              ctx.lineTo(otherParticle.x, otherParticle.y);
+              ctx.strokeStyle = `rgba(255, 255, 255, ${(100 - distance) / 1000})`;
+              ctx.lineWidth = 1;
+              ctx.stroke();
+            }
+          }
+        });
+      });
+
+      animationId = requestAnimationFrame(animate);
+    };
+
+    animate();
+
+    return () => {
+      window.removeEventListener('resize', resizeCanvas);
+      cancelAnimationFrame(animationId);
+    };
+  }, []);
   
   return <motion.div className="relative w-full" initial="hidden" animate="visible" variants={containerVariants}>
-      <div className="banner-container bg-black relative overflow-hidden h-[50vh] sm:h-[60vh] md:h-[500px] lg:h-[550px] xl:h-[600px] w-full">
-        <div className="absolute inset-0 bg-black w-full">
-          <video 
-            autoPlay 
-            loop 
-            muted 
-            playsInline 
-            preload="metadata"
-            className={`w-full h-full object-cover opacity-70 grayscale ${isMobile ? 'object-right' : 'object-center'}`}
-            poster="/lovable-uploads/4bfa0d71-3ed2-4693-90b6-35142468907f.png"
-          >
-            <source src="/lovable-uploads/video_1751292840840_1751292842546.mp4" type="video/mp4" />
-            {/* Fallback image if video fails to load */}
-            <img 
-              src="/lovable-uploads/4bfa0d71-3ed2-4693-90b6-35142468907f.png" 
-              alt="WRLDS Technologies Connected People" 
-              className={`w-full h-full object-cover opacity-70 grayscale ${isMobile ? 'object-right' : 'object-center'}`} 
-            />
-          </video>
+      <div className="banner-container relative overflow-hidden h-[50vh] sm:h-[60vh] md:h-[500px] lg:h-[550px] xl:h-[600px] w-full">
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-800">
+          <canvas 
+            ref={canvasRef}
+            className="absolute inset-0 w-full h-full"
+          />
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-white"></div>
         </div>
         
