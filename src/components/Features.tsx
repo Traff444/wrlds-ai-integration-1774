@@ -282,8 +282,7 @@ const Features = () => {
               </div>
               <h3 className="text-2xl font-bold">Реальные кейсы</h3>
               <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
-                Explore how our textile sensors are applied in different professional contexts, 
-                from emergency response to construction and athletics.
+                Посмотрите, как наши решения по аналитике, автоматизации и AI помогают компаниям разных отраслей — от продаж до операций.
                 <span className="block text-sm mt-1 text-blue-500">Scroll horizontally to see more examples →</span>
               </p>
             </div>
