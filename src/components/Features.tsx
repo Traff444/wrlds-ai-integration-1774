@@ -128,7 +128,7 @@ const Features = () => {
   }, {
     icon: <Factory className="h-10 w-10 text-gray-700" />,
     title: "Готовые SaaS-сервисы",
-    description: "Carefully selected components that complement our technology"
+    description: "Подбираем лучшие CRM, RPA и облачные инструменты под ваши задачи."
   }, {
     icon: <Handshake className="h-10 w-10 text-gray-700" />,
     title: "Vetted Production Partners",
