@@ -118,7 +118,7 @@ const Features = () => {
     description: "RPA-скрипты, авто-оповещения и Kanban-дашборды исключают ручной учёт, сбои снабжения и срывы сроков."
   }, {
     image: "/lovable-uploads/39f5a92a-9896-470f-9868-3b2c9795c8ab.png",
-    title: "Sports Performance - Маркетинг & поддержка 24/7",
+    title: "Маркетинг & поддержка 24/7",
     description: "CRM-воронка, AI-чат-бот и сквозная аналитика UTM → ROI: ни одна заявка не теряется, рост измерим."
   }];
   const stepFlowItems = [{
