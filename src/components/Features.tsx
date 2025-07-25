@@ -131,7 +131,7 @@ const Features = () => {
     description: "Подбираем лучшие CRM, RPA и облачные инструменты под ваши задачи."
   }, {
     icon: <Handshake className="h-10 w-10 text-gray-700" />,
-    title: "Vetted Production Partners",
+    title: "Проверенные партнёры",
     description: "Expert manufacturing partners for quality and reliability"
   }];
   const sprintPhases = [{
