@@ -110,16 +110,16 @@ const Features = () => {
 
   const sensorCaseStudies = [{
     image: "/lovable-uploads/0e16ecfe-dd98-4bc6-baac-1b9f20b6b4f0.png",
-    title: "Firefighter Safety",
-    description: "Advanced protective gear with gas, temperature, positioning, and motion sensors for safer emergency response."
+    title: "Firefighter Safety - Экосистема данных руководителя",
+    description: "Единый дашборд, авто-отчёты 24 ч и 12-месячный прогноз — полная картина бизнеса в одном окне."
   }, {
     image: "/lovable-uploads/3f539d0f-d34f-4304-ab0a-8c56510ec78b.png",
-    title: "Industrial Worker Protection",
-    description: "Safety workwear with vibration, pressure, and heating sensors to prevent injuries and monitor environmental hazards."
+    title: "Industrial Worker Protection - Автоматизация операций",
+    description: "RPA-скрипты, авто-оповещения и Kanban-дашборды исключают ручной учёт, сбои снабжения и срывы сроков."
   }, {
     image: "/lovable-uploads/39f5a92a-9896-470f-9868-3b2c9795c8ab.png",
-    title: "Sports Performance",
-    description: "Smart athletic wear with temperature and pressure sensors that track hydration, foot strike patterns, and performance metrics."
+    title: "Sports Performance - Маркетинг & поддержка 24/7",
+    description: "CRM-воронка, AI-чат-бот и сквозная аналитика UTM → ROI: ни одна заявка не теряется, рост измерим."
   }];
   const stepFlowItems = [{
     icon: <Microchip className="h-10 w-10 text-gray-700" />,
