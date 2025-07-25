@@ -109,7 +109,7 @@ const Features = () => {
   }, []);
 
   const sensorCaseStudies = [{
-    image: "/lovable-uploads/843446fe-638e-4efb-b885-ed3cd505325a.png",
+    image: "/lovable-uploads/0e16ecfe-dd98-4bc6-baac-1b9f20b6b4f0.png",
     title: "Firefighter Safety",
     description: "Advanced protective gear with gas, temperature, positioning, and motion sensors for safer emergency response."
   }, {
