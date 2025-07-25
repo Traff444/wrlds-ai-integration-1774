@@ -114,7 +114,7 @@ const Features = () => {
     description: "Единый дашборд, авто-отчёты 24 ч и 12-месячный прогноз — полная картина бизнеса в одном окне."
   }, {
     image: "/lovable-uploads/3f539d0f-d34f-4304-ab0a-8c56510ec78b.png",
-    title: "Industrial Worker Protection - Автоматизация операций",
+    title: "Автоматизация операций",
     description: "RPA-скрипты, авто-оповещения и Kanban-дашборды исключают ручной учёт, сбои снабжения и срывы сроков."
   }, {
     image: "/lovable-uploads/39f5a92a-9896-470f-9868-3b2c9795c8ab.png",
