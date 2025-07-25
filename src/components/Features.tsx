@@ -117,7 +117,7 @@ const Features = () => {
     title: "Industrial Worker Protection",
     description: "Safety workwear with vibration, pressure, and heating sensors to prevent injuries and monitor environmental hazards."
   }, {
-    image: "/lovable-uploads/c5f8ee24-9815-4ebe-b65d-6f3d449feb8b.png",
+    image: "/lovable-uploads/39f5a92a-9896-470f-9868-3b2c9795c8ab.png",
     title: "Sports Performance",
     description: "Smart athletic wear with temperature and pressure sensors that track hydration, foot strike patterns, and performance metrics."
   }];
