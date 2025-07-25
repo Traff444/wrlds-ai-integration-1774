@@ -310,7 +310,7 @@ const Features = () => {
                 </div>
               </Carousel>
               <div className="text-center mt-6 text-sm text-gray-600">
-                <p className="font-medium">These examples showcase just a few ways our textile sensors can enhance safety and performance</p>
+                <p className="font-medium">Эти примеры — лишь малая часть того, как наши решения повышают эффективность и безопасность процессов.</p>
               </div>
             </div>
           </div>
