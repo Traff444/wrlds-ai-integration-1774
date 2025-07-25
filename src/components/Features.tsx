@@ -127,7 +127,7 @@ const Features = () => {
     description: "Аналитика, дашборды и AI-боты, разработанные in-house."
   }, {
     icon: <Factory className="h-10 w-10 text-gray-700" />,
-    title: "Vetted Off-the-Shelf Hardware",
+    title: "Готовые SaaS-сервисы",
     description: "Carefully selected components that complement our technology"
   }, {
     icon: <Handshake className="h-10 w-10 text-gray-700" />,
