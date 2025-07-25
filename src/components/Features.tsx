@@ -124,7 +124,7 @@ const Features = () => {
   const stepFlowItems = [{
     icon: <Microchip className="h-10 w-10 text-gray-700" />,
     title: "Собственные Kaizen-модули",
-    description: "Наши основные технологические компоненты разработаны собственными силами"
+    description: "Аналитика, дашборды и AI-боты, разработанные in-house."
   }, {
     icon: <Factory className="h-10 w-10 text-gray-700" />,
     title: "Vetted Off-the-Shelf Hardware",
