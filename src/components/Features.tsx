@@ -336,8 +336,7 @@ const Features = () => {
             </div>
             <h2 className="text-3xl font-bold mb-4">Как работает наша экосистема</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              WRLDS builds hardware and software with proprietary and off-the-shelf modules, 
-              allowing us to develop completely unique solutions at high speed and lower risk.
+              Мы комбинируем собственные Kaizen-модули, готовые SaaS-сервисы и надёжных партнёров, чтобы быстро внедрять автоматизацию с минимальными рисками.
             </p>
           </div>
           
