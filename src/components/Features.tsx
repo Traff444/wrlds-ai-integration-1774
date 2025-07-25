@@ -113,7 +113,7 @@ const Features = () => {
     title: "Firefighter Safety",
     description: "Advanced protective gear with gas, temperature, positioning, and motion sensors for safer emergency response."
   }, {
-    image: "/lovable-uploads/5463c9c5-0946-4280-a14b-17636ff69a98.png",
+    image: "/lovable-uploads/3f539d0f-d34f-4304-ab0a-8c56510ec78b.png",
     title: "Industrial Worker Protection",
     description: "Safety workwear with vibration, pressure, and heating sensors to prevent injuries and monitor environmental hazards."
   }, {
