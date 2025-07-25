@@ -278,7 +278,7 @@ const Features = () => {
           <div className="mt-16 mb-8 feature-item">
             <div className="text-center mb-8">
               <div className="inline-block mb-2 px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
-                Textile Sensor Applications
+                Kaizen-экосистема
               </div>
               <h3 className="text-2xl font-bold">Real-World Use Cases</h3>
               <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
