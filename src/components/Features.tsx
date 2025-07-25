@@ -387,7 +387,7 @@ const Features = () => {
               <div className="max-w-3xl mx-auto">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3 gap-2">
                   <div className="flex items-center">
-                    <h3 className="text-xl font-bold">Adaptation Project</h3>
+                    <h3 className="text-xl font-bold">Проект под ваши задачи</h3>
                   </div>
                   <div className="flex items-center">
                     <span className="text-sm text-gray-500 mr-2">Iterative Development</span>
