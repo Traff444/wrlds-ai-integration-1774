@@ -334,7 +334,7 @@ const Features = () => {
             <div className="inline-block mb-2 px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
               Наш подход
             </div>
-            <h2 className="text-3xl font-bold mb-4">How our technology works</h2>
+            <h2 className="text-3xl font-bold mb-4">Как работает наша экосистема</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
               WRLDS builds hardware and software with proprietary and off-the-shelf modules, 
               allowing us to develop completely unique solutions at high speed and lower risk.
