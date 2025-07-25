@@ -132,7 +132,7 @@ const Features = () => {
   }, {
     icon: <Handshake className="h-10 w-10 text-gray-700" />,
     title: "Проверенные партнёры",
-    description: "Expert manufacturing partners for quality and reliability"
+    description: "Опытные интеграторы и хостинг-провайдеры для надёжной поддержки."
   }];
   const sprintPhases = [{
     name: "Planning",
