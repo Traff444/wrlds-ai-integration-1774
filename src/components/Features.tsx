@@ -123,8 +123,8 @@ const Features = () => {
   }];
   const stepFlowItems = [{
     icon: <Microchip className="h-10 w-10 text-gray-700" />,
-    title: "WRLDS Proprietary Modules",
-    description: "Our core technology components developed in-house"
+    title: "Собственные Kaizen-модули",
+    description: "Наши основные технологические компоненты разработаны собственными силами"
   }, {
     icon: <Factory className="h-10 w-10 text-gray-700" />,
     title: "Vetted Off-the-Shelf Hardware",
