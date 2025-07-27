@@ -135,7 +135,7 @@ const Features = () => {
     description: "Опытные интеграторы и хостинг-провайдеры для надёжной поддержки."
   }];
   const sprintPhases = [{
-    name: "Planning",
+    name: "Планирование",
     icon: <CheckCircle className="h-4 w-4" />
   }, {
     name: "Development",
