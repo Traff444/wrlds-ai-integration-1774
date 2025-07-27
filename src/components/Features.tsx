@@ -390,7 +390,7 @@ const Features = () => {
                     <h3 className="text-xl font-bold">Проект под ваши задачи</h3>
                   </div>
                   <div className="flex items-center">
-                    <span className="text-sm text-gray-500 mr-2">Iterative Development</span>
+                    <span className="text-sm text-gray-500 mr-2">Итеративная разработка</span>
                     <RefreshCcw className="h-5 w-5 text-gray-600 animate-rotate-slow" />
                   </div>
                 </div>
