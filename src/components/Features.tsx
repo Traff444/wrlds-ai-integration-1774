@@ -456,7 +456,7 @@ const Features = () => {
                 </div>
               </div>
               <h3 className="text-xl font-bold mb-2">Выход на рынок</h3>
-              <p className="text-gray-700">Ready to scale, produce, and launch</p>
+              <p className="text-gray-700">Готовы масштабировать, внедрять и запускать</p>
               <div className="flex justify-center mt-4 space-x-2">
                 <span className="inline-block w-3 h-3 rounded-full bg-gray-300 animate-pulse"></span>
                 <span className="inline-block w-3 h-3 rounded-full bg-gray-500 animate-pulse animation-delay-200"></span>
