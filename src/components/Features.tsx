@@ -144,7 +144,7 @@ const Features = () => {
     name: "Тестирование",
     icon: <Box className="h-4 w-4" />
   }, {
-    name: "Review",
+    name: "Ретроспектива",
     icon: <RefreshCcw className="h-4 w-4" />
   }];
 
