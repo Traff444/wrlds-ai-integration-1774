@@ -138,7 +138,7 @@ const Features = () => {
     name: "Планирование",
     icon: <CheckCircle className="h-4 w-4" />
   }, {
-    name: "Development",
+    name: "Разработка",
     icon: <Code className="h-4 w-4" />
   }, {
     name: "Testing",
