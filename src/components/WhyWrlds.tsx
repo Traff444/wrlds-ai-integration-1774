@@ -89,7 +89,7 @@ const WhyWrlds = () => {
             Почему f(<span className="text-red-500">А</span>m)team?
           </motion.h2>
           <motion.p variants={itemVariants} className="text-gray-600 text-lg max-w-3xl mx-auto">
-            In an industry where complexity leads to failure, we bring simplicity and expertise to ensure your success
+            В мире, где сложность тормозит рост, мы приносим простоту, данные и Kaizen-экспертизу, чтобы ваш бизнес развивался быстрее.
           </motion.p>
         </motion.div>
         
