@@ -102,9 +102,9 @@ const WhyWrlds = () => {
               <BarChart className="w-8 h-8 text-gray-700" />
             </div>
             <h3 className="text-gray-900 text-2xl lg:text-3xl font-bold mb-3">
-              <AnimatedCounter end={3.8} decimals={1} suffix=" Billion" /> USD
+              5× ROI
             </h3>
-            <p className="text-gray-700">Market estimated to reach this value by 2030, with massive growth potential for smart textile solutions</p>
+            <p className="text-gray-700">Средняя окупаемость проектов автоматизации FamTeam за 12 месяцев (кейсы 2024-2025).</p>
           </motion.div>
           
           <motion.div variants={itemVariants} className="bg-gray-100 p-6 rounded-xl border border-gray-200 text-center hover:bg-gray-200 transition-all">
@@ -112,10 +112,10 @@ const WhyWrlds = () => {
               <AlertTriangle className="w-8 h-8 text-gray-700" />
             </div>
             <h3 className="text-gray-900 text-2xl lg:text-3xl font-bold mb-3">
-              <AnimatedCounter end={60} suffix="%" /> 
+              70 % SMB
             </h3>
             <p className="text-gray-700">
-              of IoT projects stall at the proof-of-concept stage due to fragmented expertise and poor coordination
+              Столько компаний в СНГ всё ещё ведут процессы вручную — мы закрываем этот разрыв.
             </p>
           </motion.div>
           
@@ -124,10 +124,10 @@ const WhyWrlds = () => {
               <Clock4 className="w-8 h-8 text-gray-700" />
             </div>
             <h3 className="text-gray-900 text-2xl lg:text-3xl font-bold mb-3">
-              <AnimatedCounter end={80} suffix="%" />
+              −40 % time-to-market
             </h3>
             <p className="text-gray-700">
-              Increase in time-to-market for IoT products over the past four years, creating costly delays
+              Сокращаем запуск новых услуг с 6 до 3 месяцев благодаря готовым Kaizen-модулям.
             </p>
           </motion.div>
         </motion.div>
