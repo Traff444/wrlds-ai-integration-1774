@@ -18,7 +18,7 @@ const DevelopmentProcess = () => {
     id: 1,
     title: "Идём в гемба: находим потери",
     description: "Обходим рабочие зоны и наблюдаем процесс «вживую»: фиксируем простои, лишние движения и перегрузы — то, чего не видно в отчётах.",
-    steps: ["Industry-specific requirement analysis", "Sensor type and material selection", "Prototype sensor development", "Initial testing and calibration"]
+    steps: ["Обход «на месте» (офис/цех/склад) и тайминг операций", "Интервью у рабочего места, фото/видео фиксация", "Поиск Muda/Mura/Muri и узких мест", "Сбор данных для VSM и составление «карты потерь»"]
   }, {
     id: 2,
     title: "Garment Integration",
