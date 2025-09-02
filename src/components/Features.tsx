@@ -36,7 +36,7 @@ const Features = () => {
     {
       icon: <BarChart3 className="w-10 h-10 text-white transition-transform duration-300 transform" />,
       title: "Kaizen-дашборды",
-      description: "Метрики, A/B и ретроспективы, чтобы улучшать бизнес 1 % в день.",
+      description: "Настраиваем CRM, интеграции и сценарии в n8n: разбор заявок, маршрутизация исполнителям, напоминания, отчёты. Автоматизируем только стабильное.",
       image: "/lovable-uploads/eb49877e-22a1-4040-983f-846f94b28e5a.png"
     }
   ];
