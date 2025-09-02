@@ -28,7 +28,7 @@ const DevelopmentProcess = () => {
     id: 3,
     title: "Кайдзен-команды",
     description: "Формируем ядро улучшений: короткие встречи, роли, 1–2 внедрения каждую неделю.",
-    steps: ["Industry-specific algorithm development", "ML model training with domain data", "Real-time analytics implementation", "Insight delivery optimization"]
+    steps: ["Подбор команды и распределение ролей", "Обучение A3, 5 Why, быстрым экспериментам", "Ритм встреч и бэклог улучшений", "Первый спринт с измеримой целью"]
   }, {
     id: 4,
     title: "Production & Certification",
