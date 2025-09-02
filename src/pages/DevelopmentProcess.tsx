@@ -27,7 +27,7 @@ const DevelopmentProcess = () => {
   }, {
     id: 3,
     title: "Кайдзен-команды",
-    description: "We develop specialized algorithms that transform textile sensor data into actionable insights unique to your industry requirements.",
+    description: "Формируем ядро улучшений: короткие встречи, роли, 1–2 внедрения каждую неделю.",
     steps: ["Industry-specific algorithm development", "ML model training with domain data", "Real-time analytics implementation", "Insight delivery optimization"]
   }, {
     id: 4,
