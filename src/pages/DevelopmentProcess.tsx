@@ -17,7 +17,7 @@ const DevelopmentProcess = () => {
   const processes = [{
     id: 1,
     title: "Идём в гемба: находим потери",
-    description: "We begin by designing custom textile sensors specifically for your industry and use case, selecting appropriate conductive materials and sensor types.",
+    description: "Обходим рабочие зоны и наблюдаем процесс «вживую»: фиксируем простои, лишние движения и перегрузы — то, чего не видно в отчётах.",
     steps: ["Industry-specific requirement analysis", "Sensor type and material selection", "Prototype sensor development", "Initial testing and calibration"]
   }, {
     id: 2,
