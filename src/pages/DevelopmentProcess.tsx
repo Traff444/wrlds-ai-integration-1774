@@ -36,7 +36,7 @@ const DevelopmentProcess = () => {
     steps: ["As-Is карта: времена, запасы, хэнд-оффы", "Расчёт lead time / process time", "Выявление узких мест и участков без ценности", "To-Be карта и дорожная карта сокращений"]
   }, {
     id: 5,
-    title: "Deployment & Support",
+    title: "«Точно вовремя» / JIT",
     description: "We provide comprehensive training, implementation assistance, and ongoing support to ensure successful adoption and continuous improvement.",
     steps: ["User training and onboarding", "Data interpretation guidance", "Performance monitoring", "Continuous improvement iterations"]
   }];
