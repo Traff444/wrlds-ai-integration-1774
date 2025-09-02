@@ -22,7 +22,7 @@ const DevelopmentProcess = () => {
   }, {
     id: 2,
     title: "5S-порядок",
-    description: "Our engineering team seamlessly integrates sensors into clothing and footwear while maintaining comfort, durability, and washability.",
+    description: "Рабочее место без хаоса: быстрее, безопаснее, чище — база для стабильного качества.",
     steps: ["Ergonomic placement optimization", "Non-intrusive integration techniques", "Durability and washability testing", "Comfort and user experience validation"]
   }, {
     id: 3,
