@@ -126,8 +126,7 @@ const DevelopmentProcess = () => {
             
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-gray-600 mb-12">
-                We've refined our development methodology to minimize risk and maximize innovation, 
-                ensuring your textile sensor project moves efficiently from concept to reality.
+                f(Am) = команда × (микро-улучшения) ^ времени. Мы включаем процесс, где маленькие изменения ежедневно складываются в заметное преимущество над конкурентами.
               </p>
               
               {/* From Textile to Intelligence Process Section */}
