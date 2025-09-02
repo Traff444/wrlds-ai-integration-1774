@@ -33,7 +33,7 @@ const DevelopmentProcess = () => {
     id: 4,
     title: "Поток ценности / VSM",
     description: "Рисуем поток ценности (VSM) От заказа до отгрузки на одной схеме — видны задержки и запасы.",
-    steps: ["Textile manufacturing partner selection", "Quality assurance processes", "Industry-specific certification procurement", "Initial production supervision"]
+    steps: ["As-Is карта: времена, запасы, хэнд-оффы", "Расчёт lead time / process time", "Выявление узких мест и участков без ценности", "To-Be карта и дорожная карта сокращений"]
   }, {
     id: 5,
     title: "Deployment & Support",
