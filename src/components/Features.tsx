@@ -122,9 +122,9 @@ const Features = () => {
     description: "CRM-воронка, AI-чат-бот и сквозная аналитика UTM → ROI: ни одна заявка не теряется, рост измерим."
   }];
   const stepFlowItems = [{
-    icon: <Microchip className="h-10 w-10 text-gray-700" />,
-    title: "Собственные Kaizen-модули",
-    description: "Аналитика, дашборды и AI-боты, разработанные in-house."
+    icon: <Workflow className="h-10 w-10 text-gray-700" />,
+    title: "Идём в гемба и находим потери",
+    description: "Личный обход процессов показывает то, чего не видно в отчётах.\nЧто вы получаете: карту потерь и план «быстрых побед»."
   }, {
     icon: <Factory className="h-10 w-10 text-gray-700" />,
     title: "Готовые SaaS-сервисы",
