@@ -18,7 +18,7 @@ const Features = () => {
     {
       icon: <TrendingUp className="w-10 h-10 text-white transition-transform duration-300 transform" />,
       title: "Аналитика и рынок",
-      description: "Исследуем рынок + клиентов, строим CJM и финансовые модели для точного роста.",
+      description: "Исследуем спрос, конкурентов и путь клиента; считаем юнит-экономику и приоритеты. На этом строим гипотезы роста и бэклог «быстрых побед».",
       image: "/lovable-uploads/bc684e3c-45bd-4393-8b93-a4d7030a8e1a.png"
     },
     {
