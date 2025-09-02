@@ -202,7 +202,7 @@ const Hero = () => {
               <BarChart3 className="w-5 h-5 md:w-6 md:h-6" />
             </div>
             <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">Скорость потока</h3>
-            <p className="text-gray-600 text-xs md:text-sm">срок «от заявки до результата» стабильно снижается.</p>
+            <p className="text-gray-600 text-xs md:text-sm">Убираем ожидание и хаотичные переключения, выравниваем загрузку — срок «от заявки до результата» стабильно снижается.</p>
           </motion.div>
           
           <motion.div className="bg-white p-4 md:p-5 rounded-xl shadow-sm border border-gray-100 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md" variants={itemVariants}>
