@@ -37,7 +37,7 @@ const DevelopmentProcess = () => {
   }, {
     id: 5,
     title: "«Точно вовремя» / JIT",
-    description: "We provide comprehensive training, implementation assistance, and ongoing support to ensure successful adoption and continuous improvement.",
+    description: "Вытягивающая система, меньше запасов — деньги в обороте, а не на складе.",
     steps: ["User training and onboarding", "Data interpretation guidance", "Performance monitoring", "Continuous improvement iterations"]
   }];
   useEffect(() => {
