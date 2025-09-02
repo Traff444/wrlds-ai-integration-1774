@@ -38,7 +38,7 @@ const DevelopmentProcess = () => {
     id: 5,
     title: "«Точно вовремя» / JIT",
     description: "Вытягивающая система, меньше запасов — деньги в обороте, а не на складе.",
-    steps: ["User training and onboarding", "Data interpretation guidance", "Performance monitoring", "Continuous improvement iterations"]
+    steps: ["ABC/XYZ-анализ номенклатуры", "Канбан-сигналы и min-max правила", "Выравнивание выпуска и ритм поставок", "Пилот на критичных позициях и мониторинг OTIF"]
   }];
   useEffect(() => {
     processSectionsRef.current = processes.map((_, i) => processSectionsRef.current[i] || null);
