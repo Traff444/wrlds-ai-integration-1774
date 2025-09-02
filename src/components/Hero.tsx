@@ -209,16 +209,16 @@ const Hero = () => {
             <div className="w-10 h-10 md:w-12 md:h-12 bg-gray-100 flex items-center justify-center rounded-lg text-gray-500 mb-2 md:mb-3">
               <Settings className="w-5 h-5 md:w-6 md:h-6" />
             </div>
-            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">Процессы под ключ</h3>
-            <p className="text-gray-600 text-xs md:text-sm">Автоматизируем продажи, снабжение и бек-офис: CRM-скрипты, роботы-интеграторы и Kaizen-дашборды.</p>
+            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">Качество в процессе</h3>
+            <p className="text-gray-600 text-xs md:text-sm">«Правильно с первого раза»: стандарты, простые проверки и визуальные точки контроля — меньше брака и переделки.</p>
           </motion.div>
           
           <motion.div className="bg-white p-4 md:p-5 rounded-xl shadow-sm border border-gray-100 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md" variants={itemVariants}>
             <div className="w-10 h-10 md:w-12 md:h-12 bg-gray-100 flex items-center justify-center rounded-lg text-gray-500 mb-2 md:mb-3">
               <Globe className="w-5 h-5 md:w-6 md:h-6" />
             </div>
-            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">Сайты + Чат-боты</h3>
-            <p className="text-gray-600 text-xs md:text-sm">Разрабатываем сайт, подключаем AI-бота и единую омниканальную воронку — всё в одной экосистеме.</p>
+            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">Самостоятельность команды</h3>
+            <p className="text-gray-600 text-xs md:text-sm">Видимость работы + короткие PDCA-циклы + поток Kaizen-идей снизу — улучшения идут без внешнего подрядчика.</p>
           </motion.div>
         </motion.div>
       </div>
