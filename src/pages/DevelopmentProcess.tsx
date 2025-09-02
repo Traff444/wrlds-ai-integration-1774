@@ -196,7 +196,7 @@ const DevelopmentProcess = () => {
               </div>
               
               <div className="bg-gray-50 p-8 rounded-lg my-12 border border-gray-100">
-                <h3 className="text-xl font-semibold mb-4">Our Development Principles</h3>
+                <h3 className="text-xl font-semibold mb-4">Стандартизация работы</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 mr-2" />
