@@ -201,7 +201,7 @@ const Hero = () => {
             <div className="w-10 h-10 md:w-12 md:h-12 bg-gray-100 flex items-center justify-center rounded-lg text-gray-500 mb-2 md:mb-3">
               <BarChart3 className="w-5 h-5 md:w-6 md:h-6" />
             </div>
-            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">Аналитика и рынок</h3>
+            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">Скорость потока</h3>
             <p className="text-gray-600 text-xs md:text-sm">Глубокие исследования, Customer-Journey-карты и финансовые модели, на которых строим стратегию роста.</p>
           </motion.div>
           
