@@ -26,7 +26,7 @@ const DevelopmentProcess = () => {
     steps: ["5S-аудит и «красные ярлыки» (сортировка)", "Планировка, маркировка, визуальные зоны", "Регламенты чистоты и ответственности", "Еженедельные 5S-чеки и улучшения"]
   }, {
     id: 3,
-    title: "AI & Data Analytics",
+    title: "Кайдзен-команды",
     description: "We develop specialized algorithms that transform textile sensor data into actionable insights unique to your industry requirements.",
     steps: ["Industry-specific algorithm development", "ML model training with domain data", "Real-time analytics implementation", "Insight delivery optimization"]
   }, {
