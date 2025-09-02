@@ -16,7 +16,7 @@ const DevelopmentProcess = () => {
   // Process component logic
   const processes = [{
     id: 1,
-    title: "Textile Sensor Design",
+    title: "Идём в гемба: находим потери",
     description: "We begin by designing custom textile sensors specifically for your industry and use case, selecting appropriate conductive materials and sensor types.",
     steps: ["Industry-specific requirement analysis", "Sensor type and material selection", "Prototype sensor development", "Initial testing and calibration"]
   }, {
