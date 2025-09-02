@@ -108,19 +108,6 @@ const Features = () => {
     };
   }, []);
 
-  const sensorCaseStudies = [{
-    image: "/lovable-uploads/0e16ecfe-dd98-4bc6-baac-1b9f20b6b4f0.png",
-    title: "Экосистема руководителя",
-    description: "Единый дашборд, авто-отчёты 24 ч и 12-месячный прогноз — полная картина бизнеса в одном окне."
-  }, {
-    image: "/lovable-uploads/3f539d0f-d34f-4304-ab0a-8c56510ec78b.png",
-    title: "Автоматизация операций",
-    description: "RPA-скрипты, авто-оповещения и Kanban-дашборды исключают ручной учёт, сбои снабжения и срывы сроков."
-  }, {
-    image: "/lovable-uploads/39f5a92a-9896-470f-9868-3b2c9795c8ab.png",
-    title: "Маркетинг & поддержка 24/7",
-    description: "CRM-воронка, AI-чат-бот и сквозная аналитика UTM → ROI: ни одна заявка не теряется, рост измерим."
-  }];
   const stepFlowItems = [{
     icon: <Workflow className="h-10 w-10 text-gray-700" />,
     title: "Идём в гемба и находим потери",
@@ -273,46 +260,6 @@ const Features = () => {
                 </p>
               </div>
             )}
-          </div>
-
-          <div className="mt-16 mb-8 feature-item">
-            <div className="text-center mb-8">
-              <div className="inline-block mb-2 px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
-                Kaizen-экосистема
-              </div>
-              <h3 className="text-2xl font-bold">Реальные кейсы</h3>
-              <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
-                Посмотрите, как наши решения по аналитике, автоматизации и AI помогают компаниям разных отраслей — от продаж до операций.
-                <span className="block text-sm mt-1 text-blue-500">Листайте вправо, чтобы увидеть больше примеров →</span>
-              </p>
-            </div>
-            
-            <div className="rounded-xl overflow-hidden bg-white p-4 feature-item">
-              <Carousel className="w-full max-w-7xl mx-auto">
-                <CarouselContent className="flex">
-                  {sensorCaseStudies.map((study, index) => <CarouselItem key={index} className="md:basis-1/3 flex-shrink-0">
-                      <Card className="border border-gray-100 shadow-md">
-                        <CardContent className="p-0">
-                          <div className="w-full h-full">
-                            <img src={study.image} alt={study.title} className="w-full h-auto object-contain" />
-                          </div>
-                          <div className="p-4">
-                            <h4 className="font-semibold text-lg">{study.title}</h4>
-                            <p className="text-sm text-gray-600 mt-2">{study.description}</p>
-                          </div>
-                        </CardContent>
-                      </Card>
-                    </CarouselItem>)}
-                </CarouselContent>
-                <div className="flex justify-center mt-6 gap-2">
-                  <CarouselPrevious className="relative static left-auto translate-y-0 hover:bg-gray-100" />
-                  <CarouselNext className="relative static right-auto translate-y-0 hover:bg-gray-100" />
-                </div>
-              </Carousel>
-              <div className="text-center mt-6 text-sm text-gray-600">
-                <p className="font-medium">Эти примеры — лишь малая часть того, как наши решения повышают эффективность и безопасность процессов.</p>
-              </div>
-            </div>
           </div>
         </div>
         <div className="text-center mt-12 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
