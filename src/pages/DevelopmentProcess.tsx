@@ -31,7 +31,7 @@ const DevelopmentProcess = () => {
     steps: ["Подбор команды и распределение ролей", "Обучение A3, 5 Why, быстрым экспериментам", "Ритм встреч и бэклог улучшений", "Первый спринт с измеримой целью"]
   }, {
     id: 4,
-    title: "Production & Certification",
+    title: "Поток ценности / VSM",
     description: "We handle manufacturing, quality control, and ensure all textile sensor products meet relevant industry standards and certifications.",
     steps: ["Textile manufacturing partner selection", "Quality assurance processes", "Industry-specific certification procurement", "Initial production supervision"]
   }, {
