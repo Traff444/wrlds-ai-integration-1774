@@ -201,7 +201,7 @@ const WhyWrlds = () => {
               onClick={() => window.scrollTo(0, 0)}
               className="inline-flex items-center px-6 py-3 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-all group"
             >
-              Узнать больше о нашем структурированном процессе разработки
+              Узнать больше о нашей структуре работы
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </motion.div>
