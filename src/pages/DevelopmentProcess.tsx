@@ -21,7 +21,7 @@ const DevelopmentProcess = () => {
     steps: ["Обход «на месте» (офис/цех/склад) и тайминг операций", "Интервью у рабочего места, фото/видео фиксация", "Поиск Muda/Mura/Muri и узких мест", "Сбор данных для VSM и составление «карты потерь»"]
   }, {
     id: 2,
-    title: "Garment Integration",
+    title: "5S-порядок",
     description: "Our engineering team seamlessly integrates sensors into clothing and footwear while maintaining comfort, durability, and washability.",
     steps: ["Ergonomic placement optimization", "Non-intrusive integration techniques", "Durability and washability testing", "Comfort and user experience validation"]
   }, {
