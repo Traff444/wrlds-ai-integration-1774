@@ -95,7 +95,7 @@ const PricingSection = () => {
             Форматы и стоимость
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
-            Выберите подходящий пакет
+            Форматы и стоимость
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             От точечных улучшений до полной трансформации — работаем в удобном для вас формате
