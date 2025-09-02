@@ -122,7 +122,7 @@ const DevelopmentProcess = () => {
               Back to Home
             </Link>
             
-            <h1 className="text-4xl font-bold mb-8">Наш подход в действиях</h1>
+            <h1 className="text-4xl font-bold mb-8">Что f(Am)team сделает для вашего бизнеса</h1>
             
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-gray-600 mb-12">
