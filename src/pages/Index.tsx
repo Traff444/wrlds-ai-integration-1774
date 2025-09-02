@@ -2,6 +2,7 @@
 import PageLayout from '@/components/PageLayout';
 import Hero from '@/components/Hero';
 import Features from '@/components/Features';
+import PricingSection from '@/components/PricingSection';
 import WhyWrlds from '@/components/WhyWrlds';
 import SEO from '@/components/SEO';
 import { useEffect } from 'react';
@@ -26,6 +27,7 @@ const Index = () => {
       />
       <Hero />
       <Features />
+      <PricingSection />
       <WhyWrlds />
     </PageLayout>
   );
