@@ -151,7 +151,7 @@ const DevelopmentProcess = () => {
                       </div>
                       
                       <div className={cn("md:w-1/2 bg-white rounded-xl p-5 shadow-sm border border-gray-100 transition-all duration-300", activeProcess === process.id ? "opacity-100 translate-y-0 shadow-md border-gray-200" : "opacity-50 md:opacity-30 hover:opacity-70 cursor-pointer")} onClick={() => setActiveProcess(process.id)}>
-                        <h4 className="font-semibold mb-3 text-gray-700">Key Activities:</h4>
+                        <h4 className="font-semibold mb-3 text-gray-700">Ключевые действия:</h4>
                         <ul className="space-y-2">
                           {process.steps.map((step, stepIndex) => <li key={stepIndex} className="flex items-start">
                               <span className="flex-shrink-0 w-5 h-5 rounded-full bg-gray-100 flex items-center justify-center mt-0.5 mr-2">
