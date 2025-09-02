@@ -126,7 +126,7 @@ const DevelopmentProcess = () => {
             
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-gray-600 mb-12">
-                f(Am) = команда × (микро-улучшения) ^ времени. Мы включаем процесс, где маленькие изменения ежедневно складываются в заметное преимущество над конкурентами.
+                <span className="text-red-600 font-semibold">f(Am) = команда × (микро-улучшения) ^ времени.</span> Мы включаем процесс, где маленькие изменения ежедневно складываются в заметное преимущество над конкурентами.
               </p>
               
               {/* From Textile to Intelligence Process Section */}
