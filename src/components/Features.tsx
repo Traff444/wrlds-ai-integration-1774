@@ -24,7 +24,7 @@ const Features = () => {
     {
       icon: <Workflow className="w-10 h-10 text-white transition-transform duration-300 transform" />,
       title: "Процессы под ключ",
-      description: "Автоматизируем продажи, снабжение и бек-офис: RPA-скрипты, интеграции, CRM",
+      description: "Гемба-аудит, 5S, стандарты и визуальный менеджмент. Запускаем короткие PDCA-циклы, чтобы команда сама убирала потери и держала качество.",
       image: "/lovable-uploads/dcb286fc-8430-4377-a96b-154ab015564d.png"
     },
     {
