@@ -81,7 +81,7 @@ const About = () => {
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-gray-700 mt-1 mr-3 flex-shrink-0" />
-                      <span><strong>Impact:</strong> ИИ только там, где есть стабильность и прозрачная выгода.</span>
+                      <span><strong>Этичная автоматизация:</strong> ИИ только там, где есть стабильность и прозрачная выгода.</span>
                     </li>
                   </ul>
                 </motion.div>
