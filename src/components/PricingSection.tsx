@@ -107,7 +107,7 @@ const PricingSection = () => {
             <div
               key={index}
               className={cn(
-                "pricing-card relative bg-white rounded-2xl shadow-lg border transition-all duration-300 hover:-translate-y-2 hover:shadow-xl opacity-0",
+                "pricing-card relative bg-white rounded-2xl shadow-lg border transition-all duration-300 hover:-translate-y-2 hover:shadow-xl opacity-0 h-full",
                 pkg.highlight ? "border-green-200 shadow-green-100" : "border-gray-200",
                 pkg.highlight ? "md:scale-105" : ""
               )}
@@ -121,7 +121,7 @@ const PricingSection = () => {
                 </div>
               )}
 
-              <div className="p-6 md:p-8">
+              <div className="p-6 md:p-8 h-full flex flex-col">
                 <div className="flex items-center gap-3 mb-4">
                   <div className={cn(
                     "p-2 rounded-lg",
@@ -144,7 +144,7 @@ const PricingSection = () => {
                   <span className="text-gray-600 text-sm">{pkg.period}</span>
                 </div>
 
-                <ul className="space-y-3 mb-8">
+                <ul className="space-y-3 mb-8 flex-grow">
                   {pkg.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start gap-3">
                       <div className={cn(
@@ -168,7 +168,7 @@ const PricingSection = () => {
                 <Button
                   onClick={scrollToContact}
                   className={cn(
-                    "w-full group transition-all duration-300",
+                    "w-full group transition-all duration-300 mt-auto",
                     pkg.highlight 
                       ? "bg-green-600 hover:bg-green-700 text-white" 
                       : "bg-gray-100 hover:bg-gray-200 text-gray-900"
