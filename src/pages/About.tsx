@@ -29,7 +29,7 @@ const About = () => {
               transition={{ duration: 0.5 }} 
               className="text-4xl font-bold mb-6"
             >
-              About WRLDS Technologies
+              О f(Am)team
             </motion.h1>
             
             <div className="prose prose-lg max-w-none">
