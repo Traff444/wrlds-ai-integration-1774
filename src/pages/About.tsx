@@ -92,7 +92,7 @@ const About = () => {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="mb-16"
               >
-                <h2 className="text-3xl font-bold mb-6">Our Story</h2>
+                <h2 className="text-3xl font-bold mb-6">Наша история</h2>
                 <div className="bg-white rounded-xl border border-gray-200 p-8 shadow-sm">
                   <p className="text-gray-600 mb-4">
                     We started with the ambition to make an inherently scattered and complex development area modular, 
