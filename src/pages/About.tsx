@@ -73,7 +73,7 @@ const About = () => {
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-gray-700 mt-1 mr-3 flex-shrink-0" />
-                      <span><strong>Quality:</strong> Стандарты, которые удобно выполнять каждый день.</span>
+                      <span><strong>Простота и уважение к людям:</strong> Стандарты, которые удобно выполнять каждый день.</span>
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-gray-700 mt-1 mr-3 flex-shrink-0" />
