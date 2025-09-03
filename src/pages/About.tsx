@@ -51,8 +51,7 @@ const About = () => {
                 >
                   <h2 className="text-3xl font-bold">Our Mission</h2>
                   <p className="text-gray-600">
-                    At WRLDS Technologies, we're on a mission to transform ordinary textiles into intelligent, 
-                    data-driven solutions that improve safety, performance, and quality of life across industries.
+                    Помогать малому и среднему бизнесу расти за счёт ежедневных микро-улучшений. Мы фиксируем стандарты, учимся на данных и автоматизируем только устойчивые процессы — чтобы скорость, качество и маржинальность росли автоматически.
                   </p>
                   <p className="text-gray-600">
                     We believe that by embedding intelligence into everyday fabrics, we can create a more 
