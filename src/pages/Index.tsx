@@ -27,8 +27,8 @@ const Index = () => {
       />
       <Hero />
       <Features />
-      <PricingSection />
       <WhyWrlds />
+      <PricingSection />
     </PageLayout>
   );
 };
