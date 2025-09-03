@@ -95,19 +95,19 @@ const About = () => {
                 <h2 className="text-3xl font-bold mb-6">Наша история</h2>
                 <div className="bg-white rounded-xl border border-gray-200 p-8 shadow-sm">
                   <p className="text-gray-600 mb-4">
-                    We started with the ambition to make an inherently scattered and complex development area modular, 
-                    smart and available to analog brands. After successfully raising millions of dollars for development, 
-                    we spent the first two years in full code mode.
+                    Шесть месяцев назад мы сели командой и решили: хватит хранить опыт «по папкам». Давайте превратим его в простую практику, которая помогает бизнесу увидеть свои процессы под другим углом — не в отчётах, а там, где идёт работа.
                   </p>
                   <p className="text-gray-600 mb-4">
-                    The goal was to turn all the scattered hardware and building blocks into simple modules to be 
-                    assembled like Lego. During this time we took in a range of customers for whom we built prototypes - 
-                    a way for us to make sure what we built had bearing in real world use cases.
+                    Мы слишком хорошо знаем боль: в компании может быть много добрых намерений, но процессы разваливаются — сроки плывут, люди переделывают, деньги «теряются по дороге». Причина одна: никто не собирает всё в один пазл, где видно, что реально приносит деньги, а что — шум.
+                  </p>
+                  <p className="text-gray-600 mb-4">
+                    Мы долго искали своё «зачем» и нишу. Щелчок случился, когда мы вслух сказали слово «кайдзен». Мы и раньше интуитивно разбивали работу на маленькие шаги, клеили красные метки на складе, подписывали полки, спорили за порядок. Но тогда встречали сопротивление.
+                  </p>
+                  <p className="text-gray-600 mb-4">
+                    — «Все так просто?» — спросил один коллега. — Да. Просто и сложно одновременно: простые шаги каждый день — и дисциплина держать их.
                   </p>
                   <p className="text-gray-600">
-                    In 2023 we felt we had reached a technology level allowing us to start working on enterprise level. 
-                    Since then, we have focused on textile integrations because of the enormous potential smart textiles 
-                    have across multiple industries from healthcare to public safety.
+                    Так родилась f(Am)team. Наш принцип — гемба, не слайды: идём на место, делаем работу видимой, фиксируем понятные стандарты, запускаем короткие PDCA-циклы. И только устойчивое — автоматизируем. Если компания к изменениям не созрела, мы честно скажем: нам рано быть вместе. Мир движется — стоя на месте, легко остаться за бортом.
                   </p>
                 </div>
               </motion.div>
