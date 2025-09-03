@@ -54,8 +54,7 @@ const About = () => {
                     Помогать малому и среднему бизнесу расти за счёт ежедневных микро-улучшений. Мы фиксируем стандарты, учимся на данных и автоматизируем только устойчивые процессы — чтобы скорость, качество и маржинальность росли автоматически.
                   </p>
                   <p className="text-gray-600">
-                    We believe that by embedding intelligence into everyday fabrics, we can create a more 
-                    connected, responsive, and safer world.
+                    Мы верим, что большие достижения завтра начинаются с маленьких шагов сегодня.
                   </p>
                 </motion.div>
                 
