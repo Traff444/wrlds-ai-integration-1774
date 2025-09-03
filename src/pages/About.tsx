@@ -65,7 +65,7 @@ const About = () => {
                   transition={{ duration: 0.6, delay: 0.2 }}
                   className="bg-gray-50 rounded-2xl p-8 border border-gray-100"
                 >
-                  <h3 className="text-2xl font-bold mb-4">Our Values</h3>
+                  <h3 className="text-2xl font-bold mb-4">Наши Ценности</h3>
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-gray-700 mt-1 mr-3 flex-shrink-0" />
