@@ -29,7 +29,7 @@ const About = () => {
               transition={{ duration: 0.5 }} 
               className="text-4xl font-bold mb-6"
             >
-              О f(Am)team
+              О f(<span className="text-red-600">A</span>m)team
             </motion.h1>
             
             <div className="prose prose-lg max-w-none">
