@@ -85,16 +85,16 @@ const PricingSection = () => {
   }, []);
 
   return (
-    <section className="py-16 md:py-24 bg-black" ref={sectionRef}>
+    <section className="py-16 md:py-24 bg-white" ref={sectionRef}>
       <div className="container mx-auto max-w-6xl px-4 md:px-8">
         <div className="text-center mb-12">
-          <div className="inline-block mb-4 px-4 py-2 bg-red-500/10 border border-red-500/20 text-red-400 rounded-full text-sm font-medium">
+          <div className="inline-block mb-4 px-4 py-2 bg-red-500/10 border border-red-500/20 text-red-600 rounded-full text-sm font-medium">
             Форматы и стоимость
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
             Форматы и стоимость
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p className="text-gray-600 max-w-2xl mx-auto">
             От точечных улучшений до полной трансформации — работаем в удобном для вас формате
           </p>
         </div>
@@ -167,13 +167,13 @@ const PricingSection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <p className="text-gray-400 mb-4">
+          <p className="text-gray-600 mb-4">
             Нужен индивидуальный подход? 
           </p>
           <Button 
             variant="outline" 
             onClick={scrollToContact}
-            className="border-gray-600 text-gray-300 hover:bg-gray-800 hover:text-white"
+            className="border-gray-300 text-gray-700 hover:bg-gray-100"
           >
             Обсудить особые условия
           </Button>
