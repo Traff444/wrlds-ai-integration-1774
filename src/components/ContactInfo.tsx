@@ -27,7 +27,7 @@ const ContactInfo = () => {
                 alt="Felix von Heland"
                 className="w-32 h-32 rounded-full mb-4 object-cover object-top filter grayscale"
               />
-              <h3 className="text-xl font-bold text-gray-900">Felix von Heland</h3>
+              <h3 className="text-xl font-bold text-gray-900">Сергей Романовский</h3>
               <p className="text-gray-600 mb-4">Генеральный директор и основатель</p>
               <div className="flex flex-col space-y-3">
                 <a href="mailto:felix@wrlds.com" className="flex items-center text-gray-700 hover:text-blue-600">
