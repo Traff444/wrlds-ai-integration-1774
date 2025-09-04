@@ -177,7 +177,7 @@ const WhyWrlds = () => {
                 </div>
                 <div>
                   <h4 className="text-xl font-bold text-gray-900 mb-2">Ускоряем поток (VSM • PDCA • Kaizen)</h4>
-                  <p className="text-gray-700">RPA-скрипты и интеграции сокращают операционное время до −40 %.</p>
+                  <p className="text-gray-700">Карта потока, короткие PDCA-циклы и поток идей снижают время и брак.</p>
                 </div>
               </div>
             </motion.div>
