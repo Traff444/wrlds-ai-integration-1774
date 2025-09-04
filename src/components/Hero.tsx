@@ -3,9 +3,11 @@ import { useIsMobile } from "@/hooks/use-mobile";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
   const isMobile = useIsMobile();
+  const navigate = useNavigate();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerVariants = {
     hidden: {
@@ -165,15 +167,7 @@ const Hero = () => {
                 {/* Styled as a button but using an anchor tag for project navigation */}
                 <button 
                   className="w-full sm:w-auto min-h-[44px] px-6 sm:px-8 py-3 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300 transition-all shadow-lg hover:shadow-xl hover:shadow-gray-300/20 flex items-center justify-center group text-sm sm:text-base font-medium"
-                  onClick={e => {
-                    e.preventDefault();
-                    const projectsSection = document.getElementById('projects');
-                    if (projectsSection) {
-                      projectsSection.scrollIntoView({
-                        behavior: 'smooth'
-                      });
-                    }
-                  }}
+                  onClick={() => navigate('/development-process')}
                 >
                   Наш подход
                   <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
