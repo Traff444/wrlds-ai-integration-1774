@@ -153,7 +153,7 @@ const WhyWrlds = () => {
                 </div>
                 <div>
                   <h4 className="text-xl font-bold text-gray-900 mb-2">Видим реальность (Гемба)</h4>
-                  <p className="text-gray-700">Авто-воронки и AI-боты приносят заявки 24/7 без лишних затрат.</p>
+                  <p className="text-gray-700">Обход «на месте», карта потерь и приоритеты улучшений.</p>
                 </div>
               </div>
             </motion.div>
