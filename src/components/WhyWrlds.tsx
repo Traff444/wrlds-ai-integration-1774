@@ -152,7 +152,7 @@ const WhyWrlds = () => {
                   <BarChart className="w-6 h-6 text-gray-700" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-2">Больше продаж</h4>
+                  <h4 className="text-xl font-bold text-gray-900 mb-2">Видим реальность (Гемба)</h4>
                   <p className="text-gray-700">Авто-воронки и AI-боты приносят заявки 24/7 без лишних затрат.</p>
                 </div>
               </div>
