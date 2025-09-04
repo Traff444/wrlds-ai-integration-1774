@@ -4,8 +4,10 @@ import { cn } from '@/lib/utils';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { Button } from "@/components/ui/button";
 import { useScrollHijack } from '@/hooks/useScrollHijack';
+import { useNavigate } from "react-router-dom";
 
 const Features = () => {
+  const navigate = useNavigate();
   const featuresRef = useRef<HTMLDivElement>(null);
   const hijackSectionRef = useRef<HTMLDivElement>(null);
   const [hoveredFeature, setHoveredFeature] = useState<number | null>(null);
@@ -234,7 +236,7 @@ const Features = () => {
             <MessageSquare className="ml-2 w-4 h-4 group-hover:animate-pulse" />
           </Button>
           
-          <Button onClick={() => window.scrollTo(0, 0)} className="inline-flex items-center px-4 sm:px-6 py-3 bg-white text-gray-700 rounded-lg border border-gray-200 hover:bg-gray-50 hover:shadow-md transition-all group w-full sm:w-auto">
+          <Button onClick={() => navigate('/development-process')} className="inline-flex items-center px-4 sm:px-6 py-3 bg-white text-gray-700 rounded-lg border border-gray-200 hover:bg-gray-50 hover:shadow-md transition-all group w-full sm:w-auto">
             Узнать больше о наших технологиях
             <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Button>
