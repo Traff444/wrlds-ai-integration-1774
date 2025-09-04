@@ -25,7 +25,7 @@ const ContactInfo = () => {
               <img 
                 src="/lovable-uploads/1516059c-f1fe-4bac-b700-dfdd67a7f54f.png"
                 alt="Felix von Heland"
-                className="w-32 h-32 rounded-full mb-4 object-cover filter grayscale"
+                className="w-32 h-32 rounded-full mb-4 object-cover object-top filter grayscale"
               />
               <h3 className="text-xl font-bold text-gray-900">Felix von Heland</h3>
               <p className="text-gray-600 mb-4">Генеральный директор и основатель</p>
