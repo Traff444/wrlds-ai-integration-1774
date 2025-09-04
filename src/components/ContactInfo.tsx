@@ -55,7 +55,7 @@ const ContactInfo = () => {
                 alt="Love Anderberg"
                 className="w-32 h-32 rounded-full mb-4 object-cover object-top filter grayscale"
               />
-              <h3 className="text-xl font-bold text-gray-900">Love Anderberg</h3>
+              <h3 className="text-xl font-bold text-gray-900">Юлия Скачкова</h3>
               <p className="text-gray-600 mb-4">Операционный директор</p>
               <div className="flex flex-col space-y-3">
                 <a href="mailto:love@wrlds.com" className="flex items-center text-gray-700 hover:text-blue-600">
