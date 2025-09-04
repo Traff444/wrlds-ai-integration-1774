@@ -102,7 +102,7 @@ const Features = () => {
   }, []);
 
   return <>
-      <section id="features" className="relative bg-white overflow-hidden py-10 md:py-[50px] w-full">
+      <section id="features" className="relative bg-white overflow-hidden py-8 md:py-12 w-full">
         <div className="w-full px-4 sm:px-6 lg:px-8" ref={featuresRef}> 
           <div className="text-center mb-10 max-w-3xl mx-auto feature-item">
             <div className="inline-block mb-2 px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
