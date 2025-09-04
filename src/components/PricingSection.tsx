@@ -85,9 +85,9 @@ const PricingSection = () => {
   }, []);
 
   return (
-    <section className="py-12 md:py-16 bg-white" ref={sectionRef}>
+    <section className="py-8 md:py-12 bg-white" ref={sectionRef}>
       <div className="container mx-auto max-w-6xl px-4 md:px-8">
-        <div className="text-center mb-8">
+        <div className="text-center mb-6">
           <div className="inline-block mb-4 px-4 py-2 bg-red-500/10 border border-red-500/20 text-red-600 rounded-full text-sm font-medium">
             Форматы и стоимость
           </div>
@@ -120,8 +120,8 @@ const PricingSection = () => {
                 </div>
               )}
 
-              <div className="p-6 md:p-8 h-full flex flex-col">
-                <div className="flex items-center gap-3 mb-4">
+              <div className="p-4 md:p-6 h-full flex flex-col">
+                <div className="flex items-center gap-3 mb-3">
                   <div className={cn(
                     "p-2 rounded-lg",
                     pkg.highlight 
@@ -136,14 +136,14 @@ const PricingSection = () => {
                   </div>
                 </div>
 
-                <div className="mb-4">
+                <div className="mb-3">
                   <div className="flex items-baseline gap-1">
                     <span className="text-3xl font-bold text-gray-900">{pkg.price}</span>
                   </div>
                   <span className="text-gray-600 text-sm">{pkg.period}</span>
                 </div>
 
-                <ul className="space-y-3 mb-6 flex-grow">
+                <ul className="space-y-2 mb-4 flex-grow">
                   {pkg.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start gap-3">
                       <div className={cn(
@@ -179,7 +179,7 @@ const PricingSection = () => {
           ))}
         </div>
 
-        <div className="text-center mt-8">
+        <div className="text-center mt-6">
           <p className="text-gray-600 mb-4">
             Нужен индивидуальный подход? 
           </p>
