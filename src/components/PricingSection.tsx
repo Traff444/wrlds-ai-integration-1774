@@ -165,24 +165,14 @@ const PricingSection = () => {
                 <Button
                   onClick={scrollToContact}
                   className={cn(
-                    "w-full group transition-all duration-300 mt-auto relative overflow-hidden",
+                    "w-full group transition-all duration-300 mt-auto",
                     pkg.highlight 
-                      ? "bg-gradient-to-b from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white border border-red-400" 
-                      : "bg-gradient-to-b from-gray-50 to-gray-100 hover:from-gray-100 hover:to-gray-200 text-gray-900 border border-gray-300"
+                      ? "bg-red-500 hover:bg-red-600 text-white" 
+                      : "bg-white hover:bg-gray-50 text-gray-900 border border-gray-300"
                   )}
                 >
-                  <span className="relative z-10 flex items-center justify-center">
-                    Обсудить проект
-                    <ArrowRight className="ml-2 w-4 h-4 transition-all duration-300 group-hover:translate-x-1 group-hover:scale-110" />
-                  </span>
-                  <span
-                    className={cn(
-                      "absolute inset-0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500 ease-out",
-                      pkg.highlight 
-                        ? "bg-gradient-to-r from-red-500/0 via-white/20 to-red-500/0"
-                        : "bg-gradient-to-r from-gray-500/0 via-gray-400/20 to-gray-500/0"
-                    )}
-                  />
+                  Обсудить проект
+                  <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </Button>
               </div>
             </div>
