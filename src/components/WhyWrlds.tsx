@@ -176,7 +176,7 @@ const WhyWrlds = () => {
                   <Zap className="w-6 h-6 text-gray-700" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-2">Быстрее процессы</h4>
+                  <h4 className="text-xl font-bold text-gray-900 mb-2">Ускоряем поток (VSM • PDCA • Kaizen)</h4>
                   <p className="text-gray-700">RPA-скрипты и интеграции сокращают операционное время до −40 %.</p>
                 </div>
               </div>
