@@ -91,7 +91,7 @@ const PricingSection = () => {
           <div className="inline-block mb-4 px-4 py-2 bg-red-500/10 border border-red-500/20 text-red-600 rounded-full text-sm font-medium">
             Форматы и стоимость
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 whitespace-nowrap">
             Форматы и стоимость
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
