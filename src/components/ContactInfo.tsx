@@ -23,7 +23,7 @@ const ContactInfo = () => {
           <div className="bg-white rounded-xl shadow-xl p-6 md:p-8 border border-gray-700">
             <div className="flex flex-col items-center text-center">
               <img 
-                src="/lovable-uploads/89531702-8356-41e4-b43d-e151824d79b4.png"
+                src="/lovable-uploads/1516059c-f1fe-4bac-b700-dfdd67a7f54f.png"
                 alt="Felix von Heland"
                 className="w-32 h-32 rounded-full mb-4 object-cover filter grayscale"
               />
