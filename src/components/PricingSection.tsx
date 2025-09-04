@@ -8,7 +8,7 @@ const PricingSection = () => {
 
   const packages = [
     {
-      icon: <Zap className="w-8 h-8 text-blue-600" />,
+      icon: <Zap className="w-8 h-8 text-red-500" />,
       name: "Старт",
       price: "от 150 000₽",
       period: "за месяц",
@@ -20,11 +20,10 @@ const PricingSection = () => {
         "Обучение команды основам",
         "Месячное сопровождение"
       ],
-      highlight: false,
-      color: "blue"
+      highlight: false
     },
     {
-      icon: <Users className="w-8 h-8 text-green-600" />,
+      icon: <Users className="w-8 h-8 text-red-500" />,
       name: "Рост",
       price: "от 300 000₽",
       period: "за месяц",
@@ -36,11 +35,10 @@ const PricingSection = () => {
         "Дашборды и аналитика",
         "3 месяца сопровождения"
       ],
-      highlight: true,
-      color: "green"
+      highlight: true
     },
     {
-      icon: <Rocket className="w-8 h-8 text-purple-600" />,
+      icon: <Rocket className="w-8 h-8 text-red-500" />,
       name: "Масштаб",
       price: "от 500 000₽",
       period: "за проект",
@@ -52,8 +50,7 @@ const PricingSection = () => {
         "Omni-channel воронка",
         "6 месяцев сопровождения + обучение"
       ],
-      highlight: false,
-      color: "purple"
+      highlight: false
     }
   ];
 
@@ -88,16 +85,16 @@ const PricingSection = () => {
   }, []);
 
   return (
-    <section className="py-16 md:py-24 bg-gray-50" ref={sectionRef}>
+    <section className="py-16 md:py-24 bg-black" ref={sectionRef}>
       <div className="container mx-auto max-w-6xl px-4 md:px-8">
         <div className="text-center mb-12">
-          <div className="inline-block mb-4 px-4 py-2 bg-gray-200 text-gray-700 rounded-full text-sm font-medium">
+          <div className="inline-block mb-4 px-4 py-2 bg-red-500/10 border border-red-500/20 text-red-400 rounded-full text-sm font-medium">
             Форматы и стоимость
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
             Форматы и стоимость
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <p className="text-gray-400 max-w-2xl mx-auto">
             От точечных улучшений до полной трансформации — работаем в удобном для вас формате
           </p>
         </div>
@@ -107,15 +104,17 @@ const PricingSection = () => {
             <div
               key={index}
               className={cn(
-                "pricing-card relative bg-white rounded-2xl shadow-lg border transition-all duration-300 hover:-translate-y-2 hover:shadow-xl opacity-0 h-full",
-                pkg.highlight ? "border-green-200 shadow-green-100" : "border-gray-200",
+                "pricing-card relative rounded-2xl border transition-all duration-300 hover:-translate-y-2 opacity-0 h-full",
+                pkg.highlight 
+                  ? "bg-gray-900 border-red-500 shadow-lg shadow-red-500/20" 
+                  : "bg-gray-900 border-gray-700 hover:border-gray-600",
                 pkg.highlight ? "md:scale-105" : ""
               )}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
               {pkg.highlight && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <div className="bg-green-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
+                  <div className="bg-red-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
                     Популярный
                   </div>
                 </div>
@@ -123,44 +122,29 @@ const PricingSection = () => {
 
               <div className="p-6 md:p-8 h-full flex flex-col">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className={cn(
-                    "p-2 rounded-lg",
-                    pkg.color === "blue" && "bg-blue-100",
-                    pkg.color === "green" && "bg-green-100", 
-                    pkg.color === "purple" && "bg-purple-100"
-                  )}>
+                  <div className="p-2 rounded-lg bg-red-500/10 border border-red-500/20">
                     {pkg.icon}
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900">{pkg.name}</h3>
-                    <p className="text-sm text-gray-600">{pkg.description}</p>
+                    <h3 className="text-xl font-bold text-white">{pkg.name}</h3>
+                    <p className="text-sm text-gray-400">{pkg.description}</p>
                   </div>
                 </div>
 
                 <div className="mb-6">
                   <div className="flex items-baseline gap-1">
-                    <span className="text-3xl font-bold text-gray-900">{pkg.price}</span>
+                    <span className="text-3xl font-bold text-white">{pkg.price}</span>
                   </div>
-                  <span className="text-gray-600 text-sm">{pkg.period}</span>
+                  <span className="text-gray-400 text-sm">{pkg.period}</span>
                 </div>
 
                 <ul className="space-y-3 mb-8 flex-grow">
                   {pkg.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start gap-3">
-                      <div className={cn(
-                        "flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center mt-0.5",
-                        pkg.color === "blue" && "bg-blue-100",
-                        pkg.color === "green" && "bg-green-100",
-                        pkg.color === "purple" && "bg-purple-100"
-                      )}>
-                        <Check className={cn(
-                          "w-3 h-3",
-                          pkg.color === "blue" && "text-blue-600",
-                          pkg.color === "green" && "text-green-600",
-                          pkg.color === "purple" && "text-purple-600"
-                        )} />
+                      <div className="flex-shrink-0 w-5 h-5 rounded-full bg-red-500/20 flex items-center justify-center mt-0.5">
+                        <Check className="w-3 h-3 text-red-400" />
                       </div>
-                      <span className="text-gray-700 text-sm">{feature}</span>
+                      <span className="text-gray-300 text-sm">{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -170,8 +154,8 @@ const PricingSection = () => {
                   className={cn(
                     "w-full group transition-all duration-300 mt-auto",
                     pkg.highlight 
-                      ? "bg-green-600 hover:bg-green-700 text-white" 
-                      : "bg-gray-100 hover:bg-gray-200 text-gray-900"
+                      ? "bg-red-500 hover:bg-red-600 text-white" 
+                      : "bg-gray-800 hover:bg-gray-700 text-white border border-gray-600"
                   )}
                 >
                   Обсудить проект
@@ -183,13 +167,13 @@ const PricingSection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <p className="text-gray-600 mb-4">
+          <p className="text-gray-400 mb-4">
             Нужен индивидуальный подход? 
           </p>
           <Button 
             variant="outline" 
             onClick={scrollToContact}
-            className="border-gray-300 text-gray-700 hover:bg-gray-100"
+            className="border-gray-600 text-gray-300 hover:bg-gray-800 hover:text-white"
           >
             Обсудить особые условия
           </Button>
