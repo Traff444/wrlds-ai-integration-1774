@@ -2,9 +2,11 @@
 import { MessageSquare } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import ChatModal from "@/components/ChatModal";
 
 const FloatingContactButton = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [isChatOpen, setIsChatOpen] = useState(false);
   
   // Show the button after scrolling down a bit
   useEffect(() => {
@@ -21,27 +23,28 @@ const FloatingContactButton = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   
-  const scrollToContact = (e: React.MouseEvent) => {
-    e.preventDefault();
-    const contactSection = document.getElementById('contact-info');
-    if (contactSection) {
-      contactSection.scrollIntoView({
-        behavior: 'smooth'
-      });
-    }
+  const openChat = () => {
+    setIsChatOpen(true);
   };
   
   if (!isVisible) return null;
   
   return (
-    <Button
-      onClick={scrollToContact}
-      className="fixed bottom-6 right-6 z-50 bg-gray-800 hover:bg-gray-700 text-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all"
-      size="icon"
-      aria-label="Contact Us"
-    >
-      <MessageSquare className="h-6 w-6" />
-    </Button>
+    <>
+      <Button
+        onClick={openChat}
+        className="fixed bottom-6 right-6 z-50 bg-gray-800 hover:bg-gray-700 text-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all"
+        size="icon"
+        aria-label="Chat with Manager"
+      >
+        <MessageSquare className="h-6 w-6" />
+      </Button>
+      
+      <ChatModal 
+        isOpen={isChatOpen} 
+        onClose={() => setIsChatOpen(false)} 
+      />
+    </>
   );
 };
 
