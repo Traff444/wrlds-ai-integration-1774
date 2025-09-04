@@ -189,7 +189,7 @@ const WhyWrlds = () => {
                 </div>
                 <div>
                   <h4 className="text-xl font-bold text-gray-900 mb-2">Масштабируем устойчивое (TQM • Риски • Автоматизация)</h4>
-                  <p className="text-gray-700">We enable hardware/software leaps that define your brand's future.</p>
+                  <p className="text-gray-700">Качество в процессе, управление рисками и лёгкая автоматизация без хаоса.</p>
                 </div>
               </div>
             </motion.div>
