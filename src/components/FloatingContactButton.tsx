@@ -33,11 +33,12 @@ const FloatingContactButton = () => {
     <>
       <Button
         onClick={openChat}
-        className="fixed bottom-6 right-6 z-50 bg-gray-800 hover:bg-gray-700 text-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all"
+        className="fixed bottom-6 right-6 z-50 bg-red-500 hover:bg-red-600 text-white rounded-full p-4 shadow-lg hover:shadow-xl transition-all animate-pulse hover:animate-none"
         size="icon"
         aria-label="Chat with Manager"
+        style={{ width: '60px', height: '60px' }}
       >
-        <MessageSquare className="h-6 w-6" />
+        <MessageSquare className="h-7 w-7" />
       </Button>
       
       <ChatModal 
