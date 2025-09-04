@@ -51,7 +51,7 @@ const ContactInfo = () => {
           <div className="bg-white rounded-xl shadow-xl p-6 md:p-8 border border-gray-700">
             <div className="flex flex-col items-center text-center">
               <img 
-                src="/lovable-uploads/a9bb9110-964a-43b0-a5ab-7162140cd133.png"
+                src="/lovable-uploads/4956b2df-9c00-400a-a2ea-7e5f4a4aba13.png"
                 alt="Love Anderberg"
                 className="w-32 h-32 rounded-full mb-4 object-cover filter grayscale"
               />
