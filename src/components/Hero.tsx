@@ -53,7 +53,7 @@ const Hero = () => {
 
     const resizeCanvas = () => {
       canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight * 0.6;
+      canvas.height = window.innerHeight * 0.8;
     };
 
     resizeCanvas();
@@ -141,7 +141,7 @@ const Hero = () => {
   }, []);
   
   return <motion.div className="relative w-full" initial="hidden" animate="visible" variants={containerVariants}>
-      <div className="banner-container relative overflow-hidden h-[100vh] sm:h-[60vh] md:h-[500px] lg:h-[550px] xl:h-[600px] w-full">
+      <div className="banner-container relative overflow-hidden h-[75vh] sm:h-[70vh] md:h-[80vh] lg:h-[85vh] xl:h-[90vh] w-full">
         <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-gray-100">
           <canvas 
             ref={canvasRef}
@@ -149,7 +149,7 @@ const Hero = () => {
           />
         </div>
         
-        <div className="banner-overlay bg-transparent pt-16 sm:pt-20 md:pt-32 w-full">
+        <div className="banner-overlay bg-transparent pt-20 sm:pt-24 md:pt-28 lg:pt-32 w-full">
           <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center h-full">
             <motion.div className="w-full max-w-4xl text-center" variants={itemVariants}>
               <motion.h1 className="banner-title text-gray-900" variants={itemVariants}>
