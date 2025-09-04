@@ -165,7 +165,7 @@ const WhyWrlds = () => {
                 </div>
                 <div>
                   <h4 className="text-xl font-bold text-gray-900 mb-2">Наводим порядок (5S & стандарты)</h4>
-                  <p className="text-gray-700">Break through to dream clients with tech that makes you stand out.</p>
+                  <p className="text-gray-700">5S, единый способ работы и визуальные правила — «правильно с первого раза».</p>
                 </div>
               </div>
             </motion.div>
