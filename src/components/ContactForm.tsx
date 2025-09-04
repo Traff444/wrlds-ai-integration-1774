@@ -12,10 +12,10 @@ import emailjs from 'emailjs-com';
 
 // Updated schema with honeypot field validation
 const formSchema = z.object({
-  name: z.string().min(2, 'Name must be at least 2 characters'),
-  email: z.string().email('Please enter a valid email address'),
-  message: z.string().min(10, 'Message must be at least 10 characters'),
-  honeypot: z.string().max(0, 'Bot detected'), // Honeypot field must be empty
+  name: z.string().min(2, 'Имя должно содержать не менее 2 символов'),
+  email: z.string().email('Пожалуйста, введите корректный email адрес'),
+  message: z.string().min(10, 'Сообщение должно содержать не менее 10 символов'),
+  honeypot: z.string().max(0, 'Бот обнаружен'), // Honeypot field must be empty
   timestamp: z.number() // To prevent automated quick submissions
 });
 
@@ -52,8 +52,8 @@ const ContactForm = () => {
       if (data.honeypot) {
         console.log('Bot detected via honeypot');
         toast({
-          title: "Error",
-          description: "There was a problem with your submission. Please try again.",
+          title: "Ошибка",
+          description: "Произошла проблема с отправкой формы. Пожалуйста, попробуйте еще раз.",
           variant: "destructive"
         });
         return;
@@ -64,8 +64,8 @@ const ContactForm = () => {
       if (timeDiff < 3000) {
         console.log(`Bot detected: Form submitted too quickly (${timeDiff}ms)`);
         toast({
-          title: "Error",
-          description: "Please take a moment to review your message before submitting.",
+          title: "Ошибка",
+          description: "Пожалуйста, уделите время проверке сообщения перед отправкой.",
           variant: "destructive"
         });
         setIsSubmitting(false);
@@ -82,7 +82,7 @@ const ContactForm = () => {
         from_name: emailData.name,
         from_email: emailData.email,
         message: emailData.message,
-        to_name: 'WRLDS Team', // Adding recipient name parameter
+        to_name: 'f(Am)team', // Adding recipient name parameter
         reply_to: emailData.email // Keeping reply_to for compatibility
       };
       
@@ -101,11 +101,11 @@ const ContactForm = () => {
       
       console.log('Email sent successfully:', response);
       
-      toast({
-        title: "Message sent!",
-        description: "We've received your message and will get back to you soon.",
-        variant: "default"
-      });
+        toast({
+          title: "Сообщение отправлено!",
+          description: "Мы получили ваше сообщение и скоро с вами свяжемся.",
+          variant: "default"
+        });
 
       form.reset({
         name: '',
@@ -123,8 +123,8 @@ const ContactForm = () => {
       }
       
       toast({
-        title: "Error",
-        description: "There was a problem sending your message. Please try again later.",
+        title: "Ошибка",
+        description: "Произошла ошибка при отправке сообщения. Пожалуйста, попробуйте позже.",
         variant: "destructive"
       });
     } finally {
@@ -136,13 +136,13 @@ const ContactForm = () => {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="inline-block mb-3 px-3 py-1 bg-white text-black rounded-full text-sm font-medium">
-            Get In Touch
+            Связаться с нами
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">
-            Contact Us Today
+            Свяжитесь с нами сегодня
           </h2>
           <p className="text-gray-700 text-lg max-w-2xl mx-auto">
-            Have questions about our AI-powered sensor solutions? Reach out to our team and let's discuss how we can help bring your ideas to life.
+            Есть вопросы по нашим решениям для автоматизации бизнеса? Обратитесь к нашей команде, и давайте обсудим, как мы можем помочь воплотить ваши идеи в жизнь.
           </p>
         </div>
         
@@ -153,11 +153,11 @@ const ContactForm = () => {
                 <FormField control={form.control} name="name" render={({
                 field
               }) => <FormItem>
-                      <FormLabel className="text-gray-700">Name</FormLabel>
+                      <FormLabel className="text-gray-700">Имя</FormLabel>
                       <div className="relative">
                         <User className="absolute left-3 top-2.5 h-5 w-5 text-gray-400" />
                         <FormControl>
-                          <Input placeholder="Your name" className="pl-10" {...field} />
+                          <Input placeholder="Ваше имя" className="pl-10" {...field} />
                         </FormControl>
                       </div>
                       <FormMessage />
@@ -166,7 +166,7 @@ const ContactForm = () => {
                 <FormField control={form.control} name="email" render={({
                 field
               }) => <FormItem>
-                      <FormLabel className="text-gray-700">Email</FormLabel>
+                      <FormLabel className="text-gray-700">Электронная почта</FormLabel>
                       <div className="relative">
                         <Mail className="absolute left-3 top-2.5 h-5 w-5 text-gray-400" />
                         <FormControl>
@@ -179,11 +179,11 @@ const ContactForm = () => {
                 <FormField control={form.control} name="message" render={({
                 field
               }) => <FormItem>
-                      <FormLabel className="text-gray-700">Message</FormLabel>
+                      <FormLabel className="text-gray-700">Сообщение</FormLabel>
                       <div className="relative">
                         <MessageSquare className="absolute left-3 top-3 h-5 w-5 text-gray-400" />
                         <FormControl>
-                          <Textarea placeholder="Tell us about your project or inquiry..." className="min-h-[120px] pl-10 resize-none" {...field} />
+                          <Textarea placeholder="Расскажите нам о вашем проекте или запросе..." className="min-h-[120px] pl-10 resize-none" {...field} />
                         </FormControl>
                       </div>
                       <FormMessage />
@@ -209,8 +209,8 @@ const ContactForm = () => {
                     </FormItem>} />
                 
                 <button type="submit" disabled={isSubmitting} className="w-full bg-black hover:bg-gray-800 text-white py-3 px-6 rounded-md transition-colors flex items-center justify-center disabled:opacity-70">
-                  {isSubmitting ? "Sending..." : <>
-                      Send Message
+                  {isSubmitting ? "Отправка..." : <>
+                      Отправить сообщение
                       <Send className="ml-2 h-4 w-4" />
                     </>}
                 </button>
@@ -223,8 +223,8 @@ const ContactForm = () => {
               <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center text-white mb-4">
                 <Mail className="h-6 w-6" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Email Us</h3>
-              <p className="text-gray-600 mb-2">For general inquiries:</p>
+              <h3 className="text-xl font-semibold mb-2">Напишите нам</h3>
+              <p className="text-gray-600 mb-2">По общим вопросам:</p>
               <a href="mailto:info@wrlds.com" className="text-blue-500 hover:underline">hello@wrlds.com</a>
               <p className="text-gray-600 mt-2 mb-2">
             </p>

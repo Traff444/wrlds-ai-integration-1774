@@ -15,8 +15,8 @@ const Footer = () => {
     
     if (!email) {
       toast({
-        title: "Error",
-        description: "Please enter your email address.",
+        title: "Ошибка",
+        description: "Пожалуйста, введите ваш email адрес.",
         variant: "destructive"
       });
       return;
@@ -31,10 +31,10 @@ const Footer = () => {
       const EMAILJS_PUBLIC_KEY = "wQmcZvoOqTAhGnRZ3";
       
       const templateParams = {
-        from_name: "Website Subscriber",
+        from_name: "Подписчик сайта",
         from_email: email,
-        message: `New subscription request from the website footer.`,
-        to_name: 'WRLDS Team',
+        message: `Новая заявка на подписку с футера сайта.`,
+        to_name: 'f(Am)team',
         reply_to: email
       };
       
@@ -46,8 +46,8 @@ const Footer = () => {
       );
       
       toast({
-        title: "Success!",
-        description: "Thank you for subscribing to our newsletter.",
+        title: "Успешно!",
+        description: "Спасибо за подписку на нашу рассылку.",
         variant: "default"
       });
       
@@ -56,8 +56,8 @@ const Footer = () => {
       console.error("Error sending subscription:", error);
       
       toast({
-        title: "Error",
-        description: "There was a problem subscribing. Please try again later.",
+        title: "Ошибка",
+        description: "Произошла ошибка при подписке. Пожалуйста, попробуйте позже.",
         variant: "destructive"
       });
     } finally {
@@ -74,7 +74,7 @@ const Footer = () => {
               f(<span className="text-[#E53935]">A</span>m)team
             </span>
             <p className="text-gray-300 mb-6">
-              WRLDS Technologies provides an end-to-end platform for the creation and deployment of AI-powered smart sensor devices, giving customers 100% ownership while handling the complete technological development.
+              f(Am)team предоставает комплексную платформу для создания и внедрения ИИ-решений для автоматизации бизнеса, предоставляя клиентам полный контроль над процессом, обеспечивая при этом полную технологическую разработку.
             </p>
             <p className="text-gray-300 mb-6">
               Hornsgatan 110<br />
@@ -93,21 +93,21 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-lg font-bold mb-4 text-white">Company</h3>
+            <h3 className="text-lg font-bold mb-4 text-white">Компания</h3>
             <ul className="space-y-3">
-              <li><Link to="/about" className="text-gray-300 hover:text-white transition-colors">About Us</Link></li>
-              <li><Link to="/careers" className="text-gray-300 hover:text-white transition-colors">Careers</Link></li>
-              <li><Link to="/privacy-policy" className="text-gray-300 hover:text-white transition-colors">Privacy Policy</Link></li>
+              <li><Link to="/about" className="text-gray-300 hover:text-white transition-colors">О нас</Link></li>
+              <li><Link to="/careers" className="text-gray-300 hover:text-white transition-colors">Карьера</Link></li>
+              <li><Link to="/privacy-policy" className="text-gray-300 hover:text-white transition-colors">Политика конфиденциальности</Link></li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-lg font-bold mb-4 text-white">Get in Touch</h3>
+            <h3 className="text-lg font-bold mb-4 text-white">Связаться с нами</h3>
             <form className="space-y-4" onSubmit={handleSubscribe}>
               <div>
                 <input 
                   type="email" 
-                  placeholder="Your email" 
+                  placeholder="Ваша электронная почта" 
                   className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600 text-white placeholder-gray-400"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -119,9 +119,9 @@ const Footer = () => {
                 className="w-full px-4 py-2 bg-gray-700 text-white rounded-md hover:bg-gray-600 transition-colors flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
                 disabled={isSubmitting}
               >
-                {isSubmitting ? "Subscribing..." : (
+                {isSubmitting ? "Подписываемся..." : (
                   <>
-                    Subscribe
+                    Подписаться
                     <ArrowRight className="ml-2 w-4 h-4" />
                   </>
                 )}
@@ -132,10 +132,10 @@ const Footer = () => {
         
         <div className="pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} WRLDS Technologies. All rights reserved.
+            © {new Date().getFullYear()} f(Am)team. Все права защищены.
           </p>
           <div className="flex space-x-6">
-            <Link to="/privacy-policy" className="text-sm text-gray-400 hover:text-white transition-colors">Privacy Policy</Link>
+            <Link to="/privacy-policy" className="text-sm text-gray-400 hover:text-white transition-colors">Политика конфиденциальности</Link>
           </div>
         </div>
       </div>
