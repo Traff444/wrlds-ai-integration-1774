@@ -8,7 +8,7 @@ const PricingSection = () => {
 
   const packages = [
     {
-      icon: <Zap className="w-8 h-8 text-red-500" />,
+      icon: <Zap className="w-8 h-8 text-gray-600" />,
       name: "Старт",
       price: "от 150 000₽",
       period: "за месяц",
@@ -38,7 +38,7 @@ const PricingSection = () => {
       highlight: true
     },
     {
-      icon: <Rocket className="w-8 h-8 text-red-500" />,
+      icon: <Rocket className="w-8 h-8 text-gray-600" />,
       name: "Масштаб",
       price: "от 500 000₽",
       period: "за проект",
@@ -85,9 +85,7 @@ const PricingSection = () => {
   }, []);
 
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-br from-gray-100 via-white to-gray-50 relative" ref={sectionRef}>
-      {/* Background pattern for glass effect */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(239,68,68,0.1),transparent_50%),radial-gradient(circle_at_70%_80%,rgba(239,68,68,0.05),transparent_50%)]"></div>
+    <section className="py-16 md:py-24 bg-white" ref={sectionRef}>
       <div className="container mx-auto max-w-6xl px-4 md:px-8">
         <div className="text-center mb-12">
           <div className="inline-block mb-4 px-4 py-2 bg-red-500/10 border border-red-500/20 text-red-600 rounded-full text-sm font-medium">
@@ -106,10 +104,10 @@ const PricingSection = () => {
             <div
               key={index}
               className={cn(
-                "pricing-card relative rounded-2xl border transition-all duration-300 hover:-translate-y-2 opacity-0 h-full backdrop-blur-md",
+                "pricing-card relative rounded-2xl border-2 transition-all duration-300 hover:-translate-y-2 opacity-0 h-full bg-transparent",
                 pkg.highlight 
-                  ? "bg-white/10 border-red-500/30 shadow-lg shadow-red-500/10" 
-                  : "bg-white/5 border-gray-300/20 hover:border-gray-300/30 hover:bg-white/10",
+                  ? "border-red-500 shadow-lg shadow-red-500/10" 
+                  : "border-black hover:border-gray-700",
                 pkg.highlight ? "md:scale-105" : ""
               )}
               style={{ transitionDelay: `${index * 100}ms` }}
@@ -124,7 +122,12 @@ const PricingSection = () => {
 
               <div className="p-6 md:p-8 h-full flex flex-col">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="p-2 rounded-lg bg-red-500/10 border border-red-500/20">
+                  <div className={cn(
+                    "p-2 rounded-lg",
+                    pkg.highlight 
+                      ? "bg-red-500/10 border border-red-500/20" 
+                      : "bg-gray-100 border border-gray-200"
+                  )}>
                     {pkg.icon}
                   </div>
                   <div>
@@ -143,8 +146,16 @@ const PricingSection = () => {
                 <ul className="space-y-3 mb-8 flex-grow">
                   {pkg.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-5 h-5 rounded-full bg-red-500/20 flex items-center justify-center mt-0.5">
-                        <Check className="w-3 h-3 text-red-500" />
+                      <div className={cn(
+                        "flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center mt-0.5",
+                        pkg.highlight 
+                          ? "bg-red-500/20" 
+                          : "bg-gray-200"
+                      )}>
+                        <Check className={cn(
+                          "w-3 h-3",
+                          pkg.highlight ? "text-red-500" : "text-gray-600"
+                        )} />
                       </div>
                       <span className="text-gray-700 text-sm">{feature}</span>
                     </li>
@@ -157,7 +168,7 @@ const PricingSection = () => {
                     "w-full group transition-all duration-300 mt-auto",
                     pkg.highlight 
                       ? "bg-red-500 hover:bg-red-600 text-white" 
-                      : "bg-gray-800 hover:bg-gray-700 text-white border border-gray-600"
+                      : "bg-white hover:bg-gray-50 text-gray-900 border border-gray-300"
                   )}
                 >
                   Обсудить проект
