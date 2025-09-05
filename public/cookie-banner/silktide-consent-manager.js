@@ -276,7 +276,7 @@ class SilktideCookieBanner {
       `We use cookies on our site to enhance your user experience, provide personalized content, and analyze our traffic.`;
 
     // Accept button
-    const acceptAllButtonText = this.config.text?.banner?.acceptAllButtonText || 'Accept all';
+    const acceptAllButtonText = this.config.text?.banner?.acceptAllButtonText || 'Принять все';
     const acceptAllButtonLabel = this.config.text?.banner?.acceptAllButtonAccessibleLabel;
     const acceptAllButton = `<button class="accept-all st-button st-button--primary"${
       acceptAllButtonLabel && acceptAllButtonLabel !== acceptAllButtonText 
@@ -285,7 +285,7 @@ class SilktideCookieBanner {
     }>${acceptAllButtonText}</button>`;
     
     // Reject button
-    const rejectNonEssentialButtonText = this.config.text?.banner?.rejectNonEssentialButtonText || 'Reject non-essential';
+    const rejectNonEssentialButtonText = this.config.text?.banner?.rejectNonEssentialButtonText || 'Отклонить';
     const rejectNonEssentialButtonLabel = this.config.text?.banner?.rejectNonEssentialButtonAccessibleLabel;
     const rejectNonEssentialButton = `<button class="reject-all st-button st-button--primary"${
       rejectNonEssentialButtonLabel && rejectNonEssentialButtonLabel !== rejectNonEssentialButtonText 
@@ -372,11 +372,11 @@ class SilktideCookieBanner {
   // ----------------------------------------------------------------
   getModalContent() {
     const preferencesTitle =
-      this.config.text?.preferences?.title || 'Customize your cookie preferences';
+      this.config.text?.preferences?.title || 'Настройте предпочтения cookie';
     
     const preferencesDescription =
       this.config.text?.preferences?.description ||
-      '<p>We respect your right to privacy. You can choose not to allow some types of cookies. Your cookie preferences will apply across our website.</p>';
+      '<p>Мы уважаем ваше право на конфиденциальность. Вы можете выбрать, не разрешать некоторые типы cookie. Ваши предпочтения cookie будут применяться по всему нашему веб-сайту.</p>';
     
     // Preferences button
     const preferencesButtonLabel = this.config.text?.banner?.preferencesButtonAccessibleLabel;
@@ -392,7 +392,7 @@ class SilktideCookieBanner {
     const acceptedCookieMap = this.getAcceptedCookies();
 
     // Accept button
-    const acceptAllButtonText = this.config.text?.banner?.acceptAllButtonText || 'Accept all';
+    const acceptAllButtonText = this.config.text?.banner?.acceptAllButtonText || 'Принять все';
     const acceptAllButtonLabel = this.config.text?.banner?.acceptAllButtonAccessibleLabel;
     const acceptAllButton = `<button class="preferences-accept-all st-button st-button--primary"${
       acceptAllButtonLabel && acceptAllButtonLabel !== acceptAllButtonText 
@@ -401,7 +401,7 @@ class SilktideCookieBanner {
     }>${acceptAllButtonText}</button>`;
     
     // Reject button
-    const rejectNonEssentialButtonText = this.config.text?.banner?.rejectNonEssentialButtonText || 'Reject non-essential';
+    const rejectNonEssentialButtonText = this.config.text?.banner?.rejectNonEssentialButtonText || 'Отклонить';
     const rejectNonEssentialButtonLabel = this.config.text?.banner?.rejectNonEssentialButtonAccessibleLabel;
     const rejectNonEssentialButton = `<button class="preferences-reject-all st-button st-button--primary"${
       rejectNonEssentialButtonLabel && rejectNonEssentialButtonLabel !== rejectNonEssentialButtonText 
