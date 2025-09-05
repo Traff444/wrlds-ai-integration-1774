@@ -843,10 +843,10 @@ class SilktideCookieBanner {
   window.silktideCookieBannerManager.updateCookieBannerConfig = updateCookieBannerConfig;
   window.silktideCookieBannerManager.injectScript = injectScript;
 
-  // Отключаем автоматическую инициализацию
-  // if (document.readyState === 'loading') {
-  //   document.addEventListener('DOMContentLoaded', initCookieBanner, {once: true});
-  // } else {
-  //   initCookieBanner();
-  // }
+  // Автоматическая инициализация включена
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCookieBanner, {once: true});
+  } else {
+    initCookieBanner();
+  }
 })();
