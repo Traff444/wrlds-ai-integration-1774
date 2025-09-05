@@ -412,7 +412,8 @@ class SilktideCookieBanner {
     // Credit link
     const creditLinkText = this.config.text?.preferences?.creditLinkText || 'Get this banner for free';
     const creditLinkAccessibleLabel = this.config.text?.preferences?.creditLinkAccessibleLabel;
-    const creditLink = `<a href="https://silktide.com/consent-manager"${
+    const creditLinkUrl = this.config.text?.preferences?.creditLinkUrl || 'https://silktide.com/consent-manager';
+    const creditLink = `<a href="${creditLinkUrl}"${
       creditLinkAccessibleLabel && creditLinkAccessibleLabel !== creditLinkText
         ? ` aria-label="${creditLinkAccessibleLabel}"`
         : ''
