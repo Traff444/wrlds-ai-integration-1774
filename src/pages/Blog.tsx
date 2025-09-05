@@ -17,19 +17,19 @@ const Blog = () => {
   return (
     <PageLayout>
       <SEO 
-        title="WRLDS - News and insights about smart textile technology" 
-        description="Stay updated with the latest news and insights about sensor-integrated textiles and smart technology from WRLDS Technologies."
+        title="WRLDS - Новости и аналитика технологий умного текстиля" 
+        description="Следите за последними новостями и аналитикой о текстиле с интегрированными датчиками и умных технологиях от WRLDS Technologies."
         imageUrl={featuredPost?.imageUrl || "/lovable-uploads/6b0637e9-4a7b-40d0-b219-c8b7f879f93e.png"}
-        keywords={['smart textiles', 'textile technology', 'industry news', 'sensor innovation', 'wearable tech', 'smart fabrics']}
+        keywords={['умный текстиль', 'текстильные технологии', 'новости индустрии', 'инновации датчиков', 'носимые технологии', 'умные ткани']}
         type="website"
       />
       
       <div className="w-full pt-24 pb-12 bg-gradient-to-b from-black to-gray-900 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">WRLDS News &amp; Insights</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Новости и аналитика WRLDS</h1>
             <p className="text-xl text-gray-300 mb-6">
-              The latest trends and news in sensor-integrated textiles and smart technology
+              Последние тенденции и новости в области текстиля с интегрированными датчиками и умных технологий
             </p>
           </div>
         </div>
@@ -51,17 +51,17 @@ const Blog = () => {
                     }}
                   >
                     <div className="text-white text-center bg-black/30 backdrop-blur-sm p-4 rounded-lg">
-                      <span className="px-3 py-1 bg-white/10 rounded-full text-sm font-medium inline-block mb-4">Featured</span>
+                      <span className="px-3 py-1 bg-white/10 rounded-full text-sm font-medium inline-block mb-4">Рекомендуем</span>
                       <h3 className="text-2xl md:text-3xl font-bold">{featuredPost.title}</h3>
                     </div>
                   </div>
                   <CardContent className="p-8">
-                    <p className="text-gray-500 text-sm mb-2">Published: {featuredPost.date}</p>
+                    <p className="text-gray-500 text-sm mb-2">Опубликовано: {featuredPost.date}</p>
                     <p className="text-gray-700 mb-6">
                       {featuredPost.excerpt}
                     </p>
                     <Button variant="outline" className="group">
-                      Read more 
+                      Читать далее 
                       <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                     </Button>
                   </CardContent>
@@ -87,12 +87,12 @@ const Blog = () => {
           {blogPosts.length < 4 && Array.from({ length: Math.max(0, 4 - blogPosts.length) }).map((_, index) => (
             <BlogPostCard 
               key={`placeholder-${index}`}
-              title="Upcoming article"
-              excerpt="Stay tuned for more exciting articles about smart textiles and sensor technology."
+              title="Предстоящая статья"
+              excerpt="Следите за новыми интересными статьями об умном текстиле и технологиях датчиков."
               imageUrl={index % 2 === 0 ? "/lovable-uploads/6b0637e9-4a7b-40d0-b219-c8b7f879f93e.png" : "/lovable-uploads/700e27d7-0513-4bfa-8ac4-f7fd6087594c.png"}
-              date="Coming soon"
+              date="Скоро"
               slug="#"
-              category="Upcoming"
+              category="Скоро"
             />
           ))}
         </div>
