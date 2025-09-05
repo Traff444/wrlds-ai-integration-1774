@@ -121,19 +121,10 @@ const Navbar = () => {
                   <NavigationMenuContent>
                     <ul className="grid gap-3 p-4 w-[400px]">
                       <li>
-                        <Link to="/tech-details" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Детали технологий</div>
-                          <p className="text-sm text-gray-500">Как работает наша платформа умного текстиля</p>
-                        </Link>
-                      </li>
-                      <li>
                         <Link to="/development-process" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
                           <div className="font-medium">Процесс разработки</div>
                           <p className="text-sm text-gray-500">Наш подход к созданию индивидуальных решений</p>
                         </Link>
-                      </li>
-                      <li>
-                        
                       </li>
                     </ul>
                   </NavigationMenuContent>
