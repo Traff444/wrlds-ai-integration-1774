@@ -276,7 +276,7 @@ class SilktideCookieBanner {
       `We use cookies on our site to enhance your user experience, provide personalized content, and analyze our traffic.`;
 
     // Accept button
-    const acceptAllButtonText = this.config.text?.banner?.acceptAllButtonText || 'Принять все';
+    const acceptAllButtonText = this.config.text?.banner?.acceptAllButtonText || 'Accept all';
     const acceptAllButtonLabel = this.config.text?.banner?.acceptAllButtonAccessibleLabel;
     const acceptAllButton = `<button class="accept-all st-button st-button--primary"${
       acceptAllButtonLabel && acceptAllButtonLabel !== acceptAllButtonText 
@@ -285,7 +285,7 @@ class SilktideCookieBanner {
     }>${acceptAllButtonText}</button>`;
     
     // Reject button
-    const rejectNonEssentialButtonText = this.config.text?.banner?.rejectNonEssentialButtonText || 'Отклонить';
+    const rejectNonEssentialButtonText = this.config.text?.banner?.rejectNonEssentialButtonText || 'Reject non-essential';
     const rejectNonEssentialButtonLabel = this.config.text?.banner?.rejectNonEssentialButtonAccessibleLabel;
     const rejectNonEssentialButton = `<button class="reject-all st-button st-button--primary"${
       rejectNonEssentialButtonLabel && rejectNonEssentialButtonLabel !== rejectNonEssentialButtonText 
@@ -372,11 +372,11 @@ class SilktideCookieBanner {
   // ----------------------------------------------------------------
   getModalContent() {
     const preferencesTitle =
-      this.config.text?.preferences?.title || 'Настройте предпочтения cookie';
+      this.config.text?.preferences?.title || 'Customize your cookie preferences';
     
     const preferencesDescription =
       this.config.text?.preferences?.description ||
-      '<p>Мы уважаем ваше право на конфиденциальность. Вы можете выбрать, не разрешать некоторые типы cookie. Ваши предпочтения cookie будут применяться по всему нашему веб-сайту.</p>';
+      '<p>We respect your right to privacy. You can choose not to allow some types of cookies. Your cookie preferences will apply across our website.</p>';
     
     // Preferences button
     const preferencesButtonLabel = this.config.text?.banner?.preferencesButtonAccessibleLabel;
@@ -392,7 +392,7 @@ class SilktideCookieBanner {
     const acceptedCookieMap = this.getAcceptedCookies();
 
     // Accept button
-    const acceptAllButtonText = this.config.text?.banner?.acceptAllButtonText || 'Принять все';
+    const acceptAllButtonText = this.config.text?.banner?.acceptAllButtonText || 'Accept all';
     const acceptAllButtonLabel = this.config.text?.banner?.acceptAllButtonAccessibleLabel;
     const acceptAllButton = `<button class="preferences-accept-all st-button st-button--primary"${
       acceptAllButtonLabel && acceptAllButtonLabel !== acceptAllButtonText 
@@ -401,7 +401,7 @@ class SilktideCookieBanner {
     }>${acceptAllButtonText}</button>`;
     
     // Reject button
-    const rejectNonEssentialButtonText = this.config.text?.banner?.rejectNonEssentialButtonText || 'Отклонить';
+    const rejectNonEssentialButtonText = this.config.text?.banner?.rejectNonEssentialButtonText || 'Reject non-essential';
     const rejectNonEssentialButtonLabel = this.config.text?.banner?.rejectNonEssentialButtonAccessibleLabel;
     const rejectNonEssentialButton = `<button class="preferences-reject-all st-button st-button--primary"${
       rejectNonEssentialButtonLabel && rejectNonEssentialButtonLabel !== rejectNonEssentialButtonText 
@@ -412,8 +412,7 @@ class SilktideCookieBanner {
     // Credit link
     const creditLinkText = this.config.text?.preferences?.creditLinkText || 'Get this banner for free';
     const creditLinkAccessibleLabel = this.config.text?.preferences?.creditLinkAccessibleLabel;
-    const creditLinkUrl = this.config.text?.preferences?.creditLinkUrl || 'https://silktide.com/consent-manager';
-    const creditLink = `<a href="${creditLinkUrl}"${
+    const creditLink = `<a href="https://silktide.com/consent-manager"${
       creditLinkAccessibleLabel && creditLinkAccessibleLabel !== creditLinkText
         ? ` aria-label="${creditLinkAccessibleLabel}"`
         : ''
@@ -843,62 +842,6 @@ class SilktideCookieBanner {
   window.silktideCookieBannerManager.updateCookieBannerConfig = updateCookieBannerConfig;
   window.silktideCookieBannerManager.injectScript = injectScript;
 
-  // Русская конфигурация по умолчанию
-  const russianConfig = {
-    background: {
-      showBackground: true
-    },
-    cookieIcon: {
-      position: "bottomLeft"
-    },
-    cookieTypes: [
-      {
-        id: "necessary",
-        name: "Необходимые",
-        description: "Эти файлы cookie необходимы для правильного функционирования веб-сайта и не могут быть отключены. Они помогают с такими задачами, как вход в систему и установка настроек конфиденциальности.",
-        canToggle: false,
-        defaultState: "accepted"
-      },
-      {
-        id: "analytics", 
-        name: "Аналитические",
-        description: "Эти файлы cookie помогают нам улучшить сайт, отслеживая, какие страницы наиболее популярны и как посетители перемещаются по сайту.",
-        canToggle: true,
-        defaultState: "rejected"
-      },
-      {
-        id: "marketing",
-        name: "Рекламные", 
-        description: "Эти файлы cookie предоставляют дополнительные функции и персонализацию для улучшения вашего опыта. Они могут быть установлены нами или партнерами, чьи услуги мы используем.",
-        canToggle: true,
-        defaultState: "rejected"
-      }
-    ],
-    text: {
-      banner: {
-        title: "Мы используем файлы cookie",
-        description: "Этот веб-сайт использует файлы cookie для улучшения вашего опыта. Мы будем считать, что вы согласны с этим, но вы можете отказаться, если хотите.",
-        acceptAllButtonText: "Принять все",
-        acceptAllButtonAccessibleLabel: "Принять все файлы cookie",
-        rejectNonEssentialButtonText: "Отклонить",
-        rejectNonEssentialButtonAccessibleLabel: "Отклонить",
-        preferencesButtonText: "Настройки",
-        preferencesButtonAccessibleLabel: "Открыть настройки"
-      },
-      preferences: {
-        title: "Настройте предпочтения cookie",
-        description: "<p>Мы уважаем ваше право на конфиденциальность. Вы можете выбрать, не разрешать некоторые типы cookie. Ваши предпочтения cookie будут применяться по всему нашему веб-сайту.</p>",
-        creditLinkText: "Ознакомиться с ПК",
-        creditLinkAccessibleLabel: "Ознакомиться с ПК",
-        creditLinkUrl: "/privacy-policy"
-      }
-    }
-  };
-
-  // Применяем русскую конфигурацию перед инициализацией
-  updateCookieBannerConfig(russianConfig);
-
-  // Автоматическая инициализация с русской конфигурацией
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initCookieBanner, {once: true});
   } else {
