@@ -16,76 +16,164 @@ const PrivacyPolicy = () => {
               Back to Home
             </Link>
             
-            <h1 className="text-4xl font-bold mb-8">Privacy Policy</h1>
+            <h1 className="text-4xl font-bold mb-8">Политика конфиденциальности и обработки персональных данных</h1>
             
             <div className="prose prose-lg max-w-none">
-              <p className="text-gray-600 mb-6">Last updated: April 11, 2025</p>
-              
-              <h2 className="text-2xl font-semibold mt-8 mb-4">1. Introduction</h2>
+              <p className="text-gray-600 mb-6">Последнее обновление: 8.08.2025</p>
               <p className="text-gray-600 mb-4">
-                At WRLDS Technologies ("we," "our," or "us"), we respect your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
+                <strong>Кто мы:</strong> ООО "ФамТим", УНП/рег. № [номер], адрес: [адрес], e-mail: [email], тел.: [номер].
+              </p>
+              <p className="text-gray-600 mb-6">
+                <strong>Оператор персональных данных:</strong> ООО "ФамТим", УНП [номер], адрес: [адрес], e-mail: [email], тел.: [номер].
               </p>
               
-              <h2 className="text-2xl font-semibold mt-8 mb-4">2. Information We Collect</h2>
+              <h2 className="text-2xl font-semibold mt-8 mb-4">1. Область действия</h2>
               <p className="text-gray-600 mb-4">
-                We may collect personal information that you voluntarily provide to us when you:
-              </p>
-              <ul className="list-disc pl-6 mb-4 text-gray-600">
-                <li>Contact us through our website</li>
-                <li>Subscribe to our newsletter</li>
-                <li>Register for our services</li>
-                <li>Participate in our surveys or promotions</li>
-              </ul>
-              <p className="text-gray-600 mb-4">
-                This information may include your name, email address, company name, phone number, and any other information you choose to provide.
-              </p>
-              
-              <h2 className="text-2xl font-semibold mt-8 mb-4">3. How We Use Your Information</h2>
-              <p className="text-gray-600 mb-4">
-                We may use the information we collect for various purposes, including to:
+                Эта Политика описывает, как мы собираем и обрабатываем персональные данные при использовании:
               </p>
               <ul className="list-disc pl-6 mb-4 text-gray-600">
-                <li>Provide, operate, and maintain our services</li>
-                <li>Improve, personalize, and expand our services</li>
-                <li>Understand and analyze how you use our services</li>
-                <li>Develop new products, services, features, and functionality</li>
-                <li>Communicate with you about our services, updates, and other information</li>
-                <li>Process transactions and send related information</li>
-                <li>Find and prevent fraud</li>
+                <li>сайта [домен], форм обратной связи и заявок;</li>
+                <li>наших чат-ботов/мини-приложений (напр., Telegram/WhatsApp);</li>
+                <li>CRM и сценариев автоматизации (n8n и др.);</li>
+                <li>при оказании услуг клиентам и работе с исполнителями/подрядчиками.</li>
               </ul>
               
-              <h2 className="text-2xl font-semibold mt-8 mb-4">4. Cookies and Tracking Technologies</h2>
+              <h2 className="text-2xl font-semibold mt-8 mb-4">2. Правовые основания</h2>
               <p className="text-gray-600 mb-4">
-                We may use cookies and similar tracking technologies to track activity on our website and store certain information. Cookies are files with a small amount of data that may include an anonymous unique identifier. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.
+                Мы обрабатываем персональные данные на основаниях, предусмотренных ст. 6 Закона РБ № 99-З, в том числе:
+              </p>
+              <ul className="list-disc pl-6 mb-4 text-gray-600">
+                <li>согласие субъекта персональных данных;</li>
+                <li>заключение/исполнение договора либо преддоговорные меры;</li>
+                <li>исполнение обязанностей по закону (бухучёт, налоги и т. п.);</li>
+                <li>обработка данных, содержащихся в документе, адресованном нам и подписанном субъектом ПД, — в объёме, вытекающем из содержания документа;</li>
+                <li>иные случаи, прямо предусмотренные законодательством РБ.</li>
+              </ul>
+              <p className="text-gray-600 mb-4">
+                Если к обработке применим GDPR (для резидентов ЕЭЗ), мы дополнительно руководствуемся ст. 6 Регламента (EU) 2016/679.
               </p>
               
-              <h2 className="text-2xl font-semibold mt-8 mb-4">5. Third-Party Services</h2>
+              <h2 className="text-2xl font-semibold mt-8 mb-4">3. Какие данные мы обрабатываем</h2>
+              <ul className="list-disc pl-6 mb-4 text-gray-600">
+                <li><strong>Идентификационные и контактные:</strong> имя, должность, компания, телефон, e-mail, ник в мессенджере.</li>
+                <li><strong>Заявки и проекты:</strong> описание запроса, файлы, сроки, бюджет, история коммуникаций.</li>
+                <li><strong>Данные исполнителей/подрядчиков:</strong> ФИО/наименование, ИНН/УНП, платёжные реквизиты, договорные документы.</li>
+                <li><strong>Техданные:</strong> cookie-файлы, IP-адрес, тип устройства/браузера, язык, UTM-метки, события на сайте.</li>
+                <li><strong>Коммуникации:</strong> переписка, записи созвонов (только при отдельном согласии).</li>
+              </ul>
               <p className="text-gray-600 mb-4">
-                We may use third-party services that collect, monitor, and analyze data to improve our services. These third parties have their own privacy policies addressing how they use such information.
+                Мы не запрашиваем и просим не передавать специальные категории данных (сведения о здоровье, религии и т. п.). При необходимости — только по отдельному письменному согласию и в случаях, предусмотренных законом.
               </p>
               
-              <h2 className="text-2xl font-semibold mt-8 mb-4">6. Data Retention</h2>
+              <h2 className="text-2xl font-semibold mt-8 mb-4">4. Источники данных</h2>
               <p className="text-gray-600 mb-4">
-                We will retain your personal information only for as long as is necessary for the purposes set out in this Privacy Policy.
+                Данные предоставляете вы (формы, бот, e-mail, звонок). Также данные могут поступать из публичных источников (сайт компании, реестры) и из интеграций (CRM, платёжные/аналитические сервисы) — в рамках закона.
               </p>
               
-              <h2 className="text-2xl font-semibold mt-8 mb-4">7. Security</h2>
+              <h2 className="text-2xl font-semibold mt-8 mb-4">5. Для чего используем данные (цели)</h2>
+              <ul className="list-disc pl-6 mb-4 text-gray-600">
+                <li><strong>Ответ на запрос, подготовка предложения</strong> — преддоговорные меры.</li>
+                <li><strong>Оказание услуг и сопровождение</strong> — исполнение договора.</li>
+                <li><strong>Маршрутизация заказов исполнителям</strong> (маркетплейс-логика: «первый принявший — ответственный») — передаём минимум необходимых данных: суть задачи, контакты.</li>
+                <li><strong>Маркетинг по согласию:</strong> рассылки, приглашения, полезные материалы (отписка в 1 клик).</li>
+                <li><strong>Аналитика и улучшение сервиса:</strong> агрегированная веб-статистика, A/B-тесты.</li>
+                <li><strong>Выполнение требований закона:</strong> бухгалтерия, налоги, ответы на законные запросы госорганов.</li>
+                <li><strong>Защита прав и безопасности:</strong> урегулирование споров, кибербезопасность.</li>
+              </ul>
+              
+              <h2 className="text-2xl font-semibold mt-8 mb-4">6. Обработка с использованием ИИ</h2>
               <p className="text-gray-600 mb-4">
-                The security of your data is important to us, but remember that no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security.
+                Для автоматизации рутинных ответов/классификации заявок мы можем применять AI-инструменты (например, в n8n).
+                Мы минимизируем передаваемые данные, не передаём спецкатегории и не разрешаем использовать ваши данные для обучения публичных моделей без отдельного согласия. Решения, порождающие юридические последствия исключительно автоматически, нами не принимаются.
               </p>
               
-              <h2 className="text-2xl font-semibold mt-8 mb-4">8. Your Rights</h2>
+              <h2 className="text-2xl font-semibold mt-8 mb-4">7. Файлы cookie и аналитика</h2>
               <p className="text-gray-600 mb-4">
-                Depending on your location, you may have certain rights regarding your personal information, such as the right to access, correct, or delete your personal information.
+                Мы используем cookies и аналогичные технологии для работы сайта, безопасности и аналитики.
+                Категории: строго необходимые, функциональные, аналитические/маркетинговые (последние — только по вашему согласию через баннер). Вы можете изменить выбор в настройках браузера или через баннер. Подробнее — в нашей Cookie-политике.
               </p>
               
-              <h2 className="text-2xl font-semibold mt-8 mb-4">9. Changes to This Privacy Policy</h2>
+              <h2 className="text-2xl font-semibold mt-8 mb-4">8. Кому передаём данные (получатели)</h2>
+              <ul className="list-disc pl-6 mb-4 text-gray-600">
+                <li><strong>Технологические подрядчики (обработчики):</strong> хостинг, облако, CRM ([название]), n8n ([Cloud/On-prem, регион]), аналитика ([например, Plausible/GA]), рассылки, коллтрекинг, платёжные сервисы.</li>
+                <li><strong>Исполнители/партнёры</strong> — для выполнения вашей заявки (действуют как самостоятельные операторы/контролёры и обязуются соблюдать конфиденциальность и закон).</li>
+                <li><strong>Госорганы</strong> — по основаниям и в порядке, предусмотренным законодательством.</li>
+              </ul>
               <p className="text-gray-600 mb-4">
-                We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. We will let you know via email and/or a prominent notice on our website prior to the change becoming effective.
+                Актуальный список ключевых получателей предоставим по запросу на [email].
               </p>
               
-              <h2 className="text-2xl font-semibold mt-8 mb-4">10. Contact Us</h2>
-              <p className="text-gray-600 mb-4">If you have any questions about this Privacy Policy, please contact us at hello@wrlds.com</p>
+              <h2 className="text-2xl font-semibold mt-8 mb-4">9. Трансграничная передача</h2>
+              <p className="text-gray-600 mb-4">
+                Передача ПД в иные государства допускается при наличии надлежащего уровня защиты у государства-получателя. При его отсутствии мы передаём ПД только при наличии отдельного согласия субъекта ПД после информирования о рисках, либо при наличии иных предусмотренных законом оснований/гарантий.
+                Для резидентов ЕЭЗ используем предусмотренные GDPR механизмы (в т. ч. стандартные договорные положения, если применимо).
+              </p>
+              
+              <h2 className="text-2xl font-semibold mt-8 mb-4">10. Сроки хранения</h2>
+              <ul className="list-disc pl-6 mb-4 text-gray-600">
+                <li>лид-заявки и переписка — до 24 месяцев после последней активности;</li>
+                <li>документы по договорам — 5 лет (или иной срок по закону о бухучёте/налогах);</li>
+                <li>данные исполнителей — срок действия договора + 3 года;</li>
+                <li>веб-аналитика (обезличенная) — до 26 месяцев;</li>
+                <li>записи звонков (если есть) — до 12 месяцев.</li>
+              </ul>
+              <p className="text-gray-600 mb-4">
+                Храним не дольше, чем требуется для целей обработки, затем удаляем/анонимизируем.
+              </p>
+              
+              <h2 className="text-2xl font-semibold mt-8 mb-4">11. Безопасность</h2>
+              <p className="text-gray-600 mb-4">
+                TLS-шифрование, контроль и разграничение доступа, журналирование действий, принцип минимизации, резервное копирование.
+                С обработчиками заключаем договоры/DPА и регулярно пересматриваем доступы. На случай инцидента предусмотрена процедура уведомления.
+              </p>
+              
+              <h2 className="text-2xl font-semibold mt-8 mb-4">12. Права субъектов и порядок их реализации</h2>
+              <p className="text-gray-600 mb-4">
+                Вы вправе (в пределах применимого закона): получить информацию о фактах и целях обработки, доступ к своим данным, требовать исправления/удаления/прекращения обработки, получать сведения о предоставлении данных третьим лицам, возражать и отозвать согласие (это не влияет на законность уже совершённой обработки).
+              </p>
+              <p className="text-gray-600 mb-4">
+                <strong>Как подать заявление:</strong>
+              </p>
+              <ul className="list-disc pl-6 mb-4 text-gray-600">
+                <li>в письменной форме либо в виде электронного документа (e-mail/форма на сайте/в боте) на адрес: [email];</li>
+                <li>мы вправе запросить подтверждение личности для защиты ваших данных.</li>
+              </ul>
+              <p className="text-gray-600 mb-4">
+                <strong>Сроки ответов (по Закону РБ № 99-З):</strong>
+              </p>
+              <ul className="list-disc pl-6 mb-4 text-gray-600">
+                <li>информация о фактах и целях обработки — в течение 5 рабочих дней;</li>
+                <li>исправление/удаление/прекращение обработки (если нет иных оснований) — в течение 15 календарных дней;</li>
+                <li>информация о том, какие ПД и кому предоставлялись за предыдущий год — в течение 15 календарных дней (1 раз в год бесплатно).</li>
+              </ul>
+              <p className="text-gray-600 mb-4">
+                Жалоба надзорному органу: Национальный центр защиты персональных данных РБ.
+                (Для ЕЭЗ — ваш локальный Data Protection Authority.)
+              </p>
+              
+              <h2 className="text-2xl font-semibold mt-8 mb-4">13. Несовершеннолетние</h2>
+              <p className="text-gray-600 mb-4">
+                Наши сервисы не ориентированы на лиц младше 16 лет. Обработка ПД лиц до 16 лет — только с согласия законного представителя (если иное не установлено актами законодательства). Если вы считаете, что ребёнок передал нам данные без такого согласия, напишите на [email] — удалим.
+              </p>
+              
+              <h2 className="text-2xl font-semibold mt-8 mb-4">14. Реестр операторов персональных данных</h2>
+              <p className="text-gray-600 mb-4">
+                Сведения об используемых нами информационных ресурсах/системах вносятся в Реестр операторов персональных данных в порядке, установленном законодательством РБ (для новых ИР/ИС — в течение 10 рабочих дней после ввода в постоянную эксплуатацию).
+                Номер записи в Реестре: [заполнится после внесения].
+              </p>
+              
+              <h2 className="text-2xl font-semibold mt-8 mb-4">15. Изменения Политики</h2>
+              <p className="text-gray-600 mb-4">
+                Мы можем обновлять Политику. Актуальная версия всегда доступна на этой странице; о существенных изменениях уведомим отдельно (на сайте/по e-mail, если применимо).
+              </p>
+              
+              <h2 className="text-2xl font-semibold mt-8 mb-4">16. Контакты и ответственный</h2>
+              <p className="text-gray-600 mb-4">
+                Ответственный за внутренний контроль обработки ПД: [ФИО/должность], e-mail: [email].
+              </p>
+              <p className="text-gray-600 mb-4">
+                По вопросам персональных данных: [Название], адрес: [адрес], e-mail: [email], тел.: [номер].
+              </p>
               
             </div>
           </div>
