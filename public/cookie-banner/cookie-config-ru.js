@@ -1,4 +1,4 @@
-// Конфигурация cookie баннера на русском языке
+// Конфигурация cookie баннера на русском языке v1.1
 document.addEventListener('DOMContentLoaded', function() {
   if (typeof window.silktideCookieBannerManager !== 'undefined') {
     window.silktideCookieBannerManager.updateCookieBannerConfig({
@@ -66,8 +66,8 @@ document.addEventListener('DOMContentLoaded', function() {
           description: "<p>Мы используем cookie на нашем сайте для улучшения пользовательского опыта, предоставления персонализированного контента и анализа трафика. <a href=\"/privacy-policy\" target=\"_blank\">Политика конфиденциальности.</a></p>",
           acceptAllButtonText: "Принять все",
           acceptAllButtonAccessibleLabel: "Принять все файлы cookie",
-          rejectNonEssentialButtonText: "Отклонить необязательные",
-          rejectNonEssentialButtonAccessibleLabel: "Отклонить необязательные",
+          rejectNonEssentialButtonText: "Отклонить",
+          rejectNonEssentialButtonAccessibleLabel: "Отклонить",
           preferencesButtonText: "Настройки",
           preferencesButtonAccessibleLabel: "Открыть настройки"
         },
