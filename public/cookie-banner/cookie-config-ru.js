@@ -1,11 +1,10 @@
-// Конфигурация cookie баннера на русском языке v1.2
-// Устанавливаем конфигурацию ДО автоматической инициализации
-window.silktideCookieBannerManager = window.silktideCookieBannerManager || {};
-
-// Настройка конфигурации до инициализации
+// Русская конфигурация cookie баннера v2.0
 (function() {
-  function setRussianConfig() {
-    if (window.silktideCookieBannerManager && window.silktideCookieBannerManager.updateCookieBannerConfig) {
+  // Ждем загрузки основного скрипта
+  function initRussianCookieBanner() {
+    if (typeof window.silktideCookieBannerManager !== 'undefined' && window.silktideCookieBannerManager.updateCookieBannerConfig) {
+      
+      // Устанавливаем русскую конфигурацию
       window.silktideCookieBannerManager.updateCookieBannerConfig({
         background: {
           showBackground: true
@@ -56,22 +55,26 @@ window.silktideCookieBannerManager = window.silktideCookieBannerManager || {};
           }
         }
       });
+      
+      return true; // Успешно инициализировано
     }
+    return false; // Не удалось инициализировать
   }
 
-  // Пытаемся установить конфигурацию сразу
-  setRussianConfig();
-  
-  // Если не получилось, ждем загрузки скрипта
-  if (!window.silktideCookieBannerManager.updateCookieBannerConfig) {
-    const checkInterval = setInterval(() => {
-      if (window.silktideCookieBannerManager && window.silktideCookieBannerManager.updateCookieBannerConfig) {
-        setRussianConfig();
-        clearInterval(checkInterval);
-      }
-    }, 50);
-    
-    // Прекращаем попытки через 5 секунд
-    setTimeout(() => clearInterval(checkInterval), 5000);
+  // Пытаемся инициализировать сразу
+  if (!initRussianCookieBanner()) {
+    // Если не получилось, ждем загрузки DOM
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', function() {
+        // Пробуем еще раз после загрузки DOM
+        if (!initRussianCookieBanner()) {
+          // Последняя попытка через небольшую задержку
+          setTimeout(initRussianCookieBanner, 100);
+        }
+      });
+    } else {
+      // DOM уже загружен, пробуем через задержку
+      setTimeout(initRussianCookieBanner, 100);
+    }
   }
 })();

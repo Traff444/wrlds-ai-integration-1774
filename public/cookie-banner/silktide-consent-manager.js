@@ -843,9 +843,10 @@ class SilktideCookieBanner {
   window.silktideCookieBannerManager.updateCookieBannerConfig = updateCookieBannerConfig;
   window.silktideCookieBannerManager.injectScript = injectScript;
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initCookieBanner, {once: true});
-  } else {
-    initCookieBanner();
-  }
+  // Отключаем автоматическую инициализацию
+  // if (document.readyState === 'loading') {
+  //   document.addEventListener('DOMContentLoaded', initCookieBanner, {once: true});
+  // } else {
+  //   initCookieBanner();
+  // }
 })();
