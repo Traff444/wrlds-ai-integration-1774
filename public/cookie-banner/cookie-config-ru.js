@@ -74,8 +74,9 @@ document.addEventListener('DOMContentLoaded', function() {
         preferences: {
           title: "Настройте предпочтения cookie",
           description: "<p>Мы уважаем ваше право на конфиденциальность. Вы можете выбрать, не разрешать некоторые типы cookie. Ваши предпочтения cookie будут применяться по всему нашему веб-сайту.</p>",
-          creditLinkText: "Получить этот баннер бесплатно",
-          creditLinkAccessibleLabel: "Получить этот баннер бесплатно"
+          creditLinkText: "ознакомиться с Политикой Конфиденциальности",
+          creditLinkAccessibleLabel: "ознакомиться с Политикой Конфиденциальности",
+          creditLinkUrl: "/privacy-policy"
         }
       }
     });
